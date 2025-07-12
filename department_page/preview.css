@@ -89,7 +89,7 @@ html, body {
 text-decoration: none !important;
 }
 .text-Content{
-  background-image: url('/MyMyWeb_grahics/WebAppDesign.jpg');
+  background-image: url('/my_web_grahics/webAppDesign.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -107,16 +107,16 @@ text-decoration: none !important;
     text-decoration: none;
 }
 .boxOne{
-  background-image: url('/MyMyWeb_grahics/RoboticDesign.jpg');
+  background-image: url('/my_web_grahics/roboticDesign.jpg');
 }
  .boxTwo{
-  background-image: url('/MyMyWeb_grahics/BlenderAnimation.jpg');
+  background-image: url('/my_web_grahics/blenderAnimation.jpg');
  }
  .boxThree{
-  background-image: url('/MyMyWeb_grahics/ReflecSearchInputwithImageAtBack.jpg');
+  background-image: url('/my_web_grahics/reflecSearchInputwithImageAtBack.jpg');
  }
  .boxFour{
-  background-image: url('/MyMyWeb_grahics/BlockLongSocialMediaIcons.jpg');
+  background-image: url('/my_web_grahics/blockLongSocialMediaIcons.jpg');
  }
  .boxOne, .boxTwo, .boxThree, .boxFour {
       display: flex;

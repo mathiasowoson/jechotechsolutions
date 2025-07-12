@@ -112,10 +112,10 @@ html, body {
 }
 
 .boxOnedepartment {
-  background-image: url('/MyMyWeb_grahics/RoboticDesign.jpg');
+  background-image: url('/my_web_grahics/roboticDesign.jpg');
 }
  .boxTwodepartment {
-  background-image: url('/MyMyWeb_grahics/BlenderAnimation.jpg');
+  background-image: url('/my_web_grahics/blenderAnimation.jpg');
  }
 
  .boxOnedepartment, .boxTwodepartment {
@@ -130,7 +130,7 @@ html, body {
     box-shadow: 16px 0px 28px 0 rgb(0,0,0,0.1);
  }
  .intro-Textdeparment{
-  background-image: url('/MyMyWeb_grahics/Whittspace.png');
+  background-image: url('/my_web_grahics/whittspace.png');
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: cover !important;
