@@ -1,0 +1,120 @@
+body{
+    background: radial-gradient(circle at top, rgb(104, 104, 103),#000 30%);
+    color: white !important;
+}
+.policy-sectiontwo{
+    padding-top: 4em;
+}
+.row-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 6em !important;
+}
+.row-container a{
+    text-decoration: none;
+}
+.privacy-button p{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 1em;
+}
+.privacy-button{
+    border-radius: 0 0.6em 0 0.6em;
+    text-align: center;
+    background-color: rgb(34, 34, 64);
+    transition: all 0.3s ease;
+}
+
+.privacy-button:active, .privacy-button:focus{
+    background-color: white !important;
+    outline: none;
+    transform: scale(0.7);
+    color: rgb(34, 34, 64);
+}
+.policy-sectionthree{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+.policy-sectionthree h4{
+    font-size: 2em;
+    margin-left: 0.5em;
+}
+.privcy-text{
+    display: flex;
+    font-size: 0.6em;
+    margin-left: 2em;
+}
+.privacy-contentwrapper{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+.pricyside-select{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+.pricyside-select h4{
+    font-size: 0.7em;
+    font-weight: bold;
+}
+.pricyside-select a{
+    text-decoration: none;
+    color: rgb(92, 84, 84);
+}
+.prvacycontent-space{
+    margin-right: 1.5em;
+}
+.prvacycontent-space p{
+    font-size: 0.8em;
+}
+@media(max-width:565.98px){
+    .cookies, .cookiesuse{
+        margin-top: 8.7em !important;
+    }
+    .informations{
+        margin-top: 5em;
+    }
+    .thirdparties{
+        margin-top: 5em;
+    }
+    #websiteMedia{
+        margin-top: 4em;
+    }
+    .disclosure{
+        margin-top: 8.5em;
+    }
+    .update{
+        margin-top: 4em;
+    }
+    .row-container .privacy-button{
+        width: 20% !important;
+        height: 10% !important;
+    }
+    .row-container .privacy-button p{
+        font-size: 0.6em !important;
+    }
+}
+@media(min-width:575.98px){
+    .cookies{
+        margin-top: 5em;
+    }
+    .cookiesuse{
+        margin-top: 7em;
+    }
+    .informations{
+        margin-top: 3em;
+    }
+    .thirdparties{
+        margin-top: 2em;
+    }
+    .disclosure{
+        margin-top: 5em;
+    }
+    .update{
+        margin-top: 2.5em;
+    }
+}

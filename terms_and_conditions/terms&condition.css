@@ -1,0 +1,56 @@
+body{
+    background: radial-gradient(circle at top, rgb(104, 104, 103),#000 30%);
+    color: white !important;
+}
+.ContactHero-section{
+    height: 30vh;
+}
+.termsandcondition-container{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    flex-direction: column;
+    padding: 0%;
+}
+@media(max-width:800px){
+    .termsandcondition-container{
+        grid-template-columns: 3fr 9fr;
+    }
+    .termsubside-wrapper{
+        margin-left: 20px !important;
+    }
+    .termandcondition-content{
+        font-size: 0.8em !important;
+    }
+}
+.termsandcon-sidewrapper{
+   height: 90vh;
+   padding-top: 5em !important;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.termandcondition-content{
+    padding-top: 5em !important;
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+    height: 100vh;
+    overflow-y: auto;
+}
+.termandcondition-content h6{
+    font-weight: bold;
+    color: rgb(107, 103, 103);
+}
+.termsubside-wrapper h5{
+    font-weight: bold;
+    font-size: 1em;
+}
+.termsubside-wrapper .tableselect{
+    display: flex;
+    gap: 0.6em;
+    padding: 0.6em;
+}
+.tableselect a{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(107, 103, 103);
+}

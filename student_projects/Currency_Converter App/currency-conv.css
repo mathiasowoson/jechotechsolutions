@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background: linear-gradient(180deg, #9873fe,#6a41db,#2e0799,#0f0231);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center !important;
+}
+.wrapper{
+    position: absolute !important;
+
+}
+.app-icon{
+        width: 9.37em;
+        border-radius: 50%;
+        height: 100%;
+}
+.app_details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.app_title{
+    font-size: 1.6em;
+}
+.input-container{
+    display: flex !important;
+    flex-direction: column !important;
+}
+.wrapper label{
+    display: block;
+    font-family: 600;
+    margin: 20px;
+}
+input#Amount{
+    width: 85%;
+    font-weight: 400;
+    font-size: 1.5em;
+    border: none;
+    border-bottom: 2px solid #02002c;
+    color: #7a789d;
+    margin-bottom: 2em;
+    padding: 0.2em;
+    margin: 20px;
+}
+input#Amount:focus{
+    color:  #2c2a56;
+    border-color:  #4b4889;
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    margin: 20px;
+}
+select{
+    width: 100%;
+    padding: 0.6em;
+    font-size: 1em;
+    border-radius: 0.2em;
+    background-color: #9873fe;
+    color: #ffff;
+    appearance: none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+select option{
+    color: #02002c;
+    background-color: #ffff;
+}
+button{
+    width: 100%;
+    font-size: 1em;
+    border-radius: 0.2em;
+    padding: 1em 0;
+    margin-top: 2em;
+    background-color:  #9873fe;
+    color: #ffff;
+    border: none;
+    font-family: 600;
+}
+button:active{
+    background-color:  #6a4bbd;
+    transition: background-color 0.5s;
+}
+#result{
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 1em;
+    color: #02002c;
+    background-color: #e5dbff;
+    margin: 10px;
+    padding: 0.8em 0;
+}
+#result.active{
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 1em;
+    color: #fa242e;
+    background-color: #e5dbff;
+    margin: 10px;
+    padding: 0.8em 0;
+}

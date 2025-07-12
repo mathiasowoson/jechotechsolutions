@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Page</title>
+    <link rel="stylesheet" href="/about_us/aboutUs.css">
+    <link rel="stylesheet" href="/cracked_cdns/cracked_css.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/home_page/teststyl.css">
+    <link rel="stylesheet" href="./contact-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+       crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- making use of styling from aboutUs page for hero section -->
+    <section class="ContactHero-section">
+        <div class="about-card">
+            <!-- display for large screen -->
+            <div class="carousel-caption d-none d-md-block ContactBig-screen">
+              <h5>Contact Us</h5>
+              <p>We're always available ready to assist you anytime, any day.</p>
+            </div>
+
+            <!-- diplay for small screen -->
+            <div class="carousel-caption d-block d-md-none ContactSmall-screen">
+              <h5>Contact Us</h5>
+              <p>We're always available ready to assist you anytime, any day.</p>
+              </div>
+            </div>
+        <!-- navigation section -->
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html">
+                <img src="/Logo_Folder/jechotech_logo.png" alt="">
+              </a>
+              <!-- Offcanvas Toggle Button -->
+              <button class="navbar-toggler smallScreen-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Offcanvas Navbar Content for small screens -->
+              <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close text-reset Button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body offanvsBody">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <!-- sign-up page modal button here-->
+                     <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#fullSscreenModal">Sign-Up</a>
+                    </li>
+                
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/service_page/services.html">Our Service</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/about_us/aboutUs.html">About Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="/contact-Page.html">Contact</a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/terms_and_conditions/terms&condition.html">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/private_policy/Privacy-policy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/faq_page/FAQ.html">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Navbar Content for large screens -->
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link Home" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/service_page/services.html">Our Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/about_us/aboutUs.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact_page/contact-Page.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="modal fade" id="fullSscreenModal" tabindex="-1" aria-labelledby="fullScreenModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content headerWrapper">
+                    <div class="modal-header">
+                        <a href="/index.html" class="navbar-brand" id="fullScreenModalLabel">
+                          <img src="/Logo_Folder/jechotech_logo.png" alt="">
+                        </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body sigUp-container">
+                  <!-- modal body contents -->
+                    <div class="row signupSub-continer">
+                      <div class="col-8 col-md-6 signUp-text">
+                        <div class="signIn-wrapper">
+                          <h4>Create Account With JECHOTECH-Solution</h4>
+                          <div class="signup-txtWrapper">
+                            <p>Share your work and get Project!</p>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="col-8 col-md-6 signUp-input">
+                       <div class="login-container">
+                        <h3 class="text-center">Sign Up</h3>
+                        <form id="signupForm" onsubmit="registerSignUp(event)">
+                          <div class="mb-3">
+                            <input type="text" id="FirstName" class="formControl" placeholder="First name">
+                          </div>
+                          <div class="mb-3">
+                            <input type="text" id="lastName" class="formControl" placeholder="last name">
+                          </div>
+                          <div class="mb-3">
+                            <input type="email" id="emailAddress" class="formControl" placeholder="Email Address">
+                          </div>
+                          <div class="mb-3">
+                            <input type="text" id="password" class="formControl" placeholder="password">
+                          </div>
+                          <div class="checkbox-wrapper">
+                            <input type="checkbox" class="checkBox-input" id="checkboxInput">
+                            <p>Accept terms & Conditions</p>
+                          </div>
+                          <div class="mb-3">
+                            <!-- modal button for second modal within for login for page -->
+                          <button type="button" class="actionButton w-100" id="joinUs" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Already Have Account?</button>
+                          </div>
+                          <p>___________ or __________</p>
+                         
+                            <div class="mt-3">
+                              <button type="button" class="actionButton-white w-100" id="joinUs">Sign up with google</button>
+                              </div>
+                              <div>
+                                <div class="mt-1">
+                                <button type="button" class="actionButton w-100" id="joinUs">Sign up with Apple</button>
+                                </div>
+                                </div>
+                        </form>
+                       </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+         </div>
+    
+         <!-- second modal-body content for login page -->
+         <div class="modal fade" id="exampleModalToggle2" tabindex="-1" aria-labelledby="exampleModalToggleLabel2" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content headerWrapper">
+                  <div class="modal-header">
+                      <a href="/index.html" class="navbar-brand" id="fullScreenModalLabel">
+                        <img src="/Logo_Folder/jechotech_logo.png" alt="">
+                      </a>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body sigUp-container">
+                <!--second modal body contents -->
+                  <div class="row signupSub-continer">
+                    <div class="col-8 col-md-6 signUp-text">
+                      <div class="signIn-wrapper">
+                        <h4>Create Account With JECHOTECH-Solution</h4>
+                        <div class="signup-txtWrapper">
+                          <p>Share your work and get Projects!</p>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="col-8 col-md-6 signUp-input">
+                     <div class="login-container">
+                      <h3 class="text-center">Login In</h3>
+                      <form id="loginForm" onsubmit="validateLogin(event)">
+                        <div class="mb-3">
+                          <input type="text" id="username" class="formControl" placeholder="username" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                          <input type="text" id="password" class="formControl" placeholder="password" required>
+                        </div>
+                        <div class="checkbox-wrapper">
+                          <input type="checkbox" class="checkBox-input" id="checkboxInput">
+                          <p>Accept terms & Conditions</p>
+                        </div>
+                        <div class="mb-3">
+                          <!-- modal button for second modal within for login for page -->
+                        <button type="submit" class="actionButton w-100" id="joinUs">Submit</button>
+                        </div>
+                         <!-- loader -->
+                         <div class="loader text-center my-3">
+                          <div class="spinner-border text-primary jecho-pin" role="status">jecho
+                          </div>
+                        </div>
+                        <p>____________ or ___________</p>
+                        <!-- error message display -->
+                         <div class="error-message" id="errorMessage">Incorrect username or password. Please try again.</div>
+                          <div class="mt-3">
+                            <button type="button" class="actionButton-white w-100" id="joinUs">Sign up with google</button>
+                            </div>
+                            <div>
+                              <div class="mt-1">
+                              <button type="button" class="actionButton w-100" id="joinUs">Sign up with Apple</button>
+                              </div>
+                              </div>
+                      </form>
+                     </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+       </div>
+    </section>
+
+    <section class="contactSection-one">
+      <div class="row">
+        <div class="col-8 col-md-6 coreValue-text">
+          <div class="p-5 text-black contactSub-wrapper">
+            <h3>Get In Touch</h3>
+            <p>Need help or want to work with us? JECHOTECH_SOLUTION is just a message away.
+               Reach out via email, call, or fill out the form — we’ll respond as quickly as possible..
+              </p>
+            <div class="contact-container">
+              <div class="contactWrapOne">
+                <div class="subwrapOne">
+                  <small>
+                    <i class="fas fa-phone"></i>
+                   </small>
+                  <div class="innerWrap">
+                    <h2>Phone</h2>
+                    <p><a href="tel:+23408100688446">Call Us</a></p>
+                  </div>
+                </div>
+                <div class="subwrapOne">
+                  <small>
+                    <i class="fas fa-envelope"></i>
+                 </small>
+                  <div class="innerWrap">
+                    <h2>Email</h2>
+                    <p><a href="mailto:aowojechomathias@gmail.com">aowojechomathias@gmail.com</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contactWrapOne">
+                <div class="subwrapOne">
+                  <small>
+                    <i class="fas fa-location-dot"></i>
+                  </small>
+                  <div class="innerWrap">
+                    <h2>Address</h2>
+                    <p>wuse zone4, IBB Way Abuja, Electronic warehouses</p>
+                  </div>
+                </div>
+                <div class="subwrapOne">
+                  <small>
+                    <i class="fab fa-instagram"></i>
+                  </small>
+                  <div class="innerWrap">
+                    <h2>Instagram</h2>
+                    <p>jechoTech solution</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="socialWrapper">
+              <h5>Social Media</h5>
+              <div class="socialfont-wrap">
+                <h4><i class="fab fa-whatsapp"></i></h4>
+                <h4><i class="fab fa-x-twitter"></i></h4>
+                <h4><i class="fab fa-facebook-f"></i></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-8 col-md-6 contactWrapper-two">
+          <div class="p-5 text-light">
+           <div class="contactInput-container">
+            <div class="row">
+              <form action="https://formsubmit.co/119a136fb9f4eb7d3b088951e482e888" method="POST">
+  
+               <!-- Optional hidden fields for FormSubmit customization -->
+              <input type="hidden" name="_template" value="box">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_autoresponse" value="Thanks for contacting us. We’ll get back to you shortly!">
+
+               <!-- Email Field -->
+             <div class="col-8 col-md-6 p-1">
+              <div class="inputwrap">
+                <span>Email</span>
+              <input type="email" name="email" placeholder="Email" required>
+            </div>
+           </div>
+
+            <!-- Name Field -->
+           <div class="col-8 col-md-6 p-1">
+             <div class="inputwrap">
+               <span>Name</span>
+            <input type="text" name="name" placeholder="Your name..." required>
+           </div>
+          </div>
+
+          <!-- Phone and Message Fields -->
+         <div class="subInput-wrapper">
+         <div class="col-8 subInput">
+          <span>Phone</span>
+        <input type="tel" name="phone" placeholder="Phone" required>
+        </div>
+
+    <div class="col-8 subInput">
+      <span>Message</span>
+      <textarea name="message" placeholder="Your message..." required></textarea>
+    </div>
+  </div>
+  <!-- Submit Button -->
+     <button type="submit" class="btn btn-tertiary">Submit</button>
+              </form>
+
+
+            </div>
+           </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contactSection-two">
+      <div class="row">
+        <div class="col-8 mapSection">
+           <!-- photo is added via css -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 p-5 d-md-flex d-sm-block">
+            <div class="col-sm-12 col-md-6 d-block subFooter-one">
+            <div class="my-logo">
+              <img src="/Logo_Folder/jechotech_logo.png" alt="My logo">
+              <p>Jechotech-solution</p>
+            </div>
+            <div class="About-us">
+              <h4><a href="/about_us/aboutUs.html">About Us</a></h4>
+              <p>JECHOTECH-SOLUTION is a dynamic team of tech enthusiasts and engineers.</p>
+            </div>
+            <div class="contact-us">
+              <h4><a href="/contact_page/contact-Page.html">Contact Us</a></h4>
+              <div class="contacts">
+                <small><i class="fa-solid fa-phone-volume"></i></small>
+                <p><a href="tel:+2348100688446">Call Us</a></p>
+              </div>
+              <div class="gmail">
+                <small><i class="fa-solid fa-envelope-open-text"></i></small>
+                <p><a href="mailto:aowojechomathias@gmail.com">aowojechomathias@gmail.com</a></p>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 d-block subFooter-two">
+              <h4>Information</h4>
+              <ul>
+                <li><a href="/service_page/services.html">Services</a></li>
+                <li><a href="#">More Search</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#">Events</a></li>
+              </ul>
+            </div>
+            <!-- display on mobile-wiew but hidding on large screen -->
+
+            <div class="col-sm-12 col-md-6 d-block subFooter-three">
+              <h4>Helpful Links</h4>
+              <ul>
+                <li><a href="/service_page/services.html">Services</a></li>
+                <li><a href="/contact_page/contact-Page.html">Supports</a></li>
+                <li><a href="/terms_and_conditions/terms&condition.html">Terms & Condition</a></li>
+                <li><a href="/private_policy/Privacy-policy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <form action="https://formsubmit.co/aowojechomathias@gmail.com" method="POST">
+            <div class="col col-sm-12 col-md-6 d-block subFooter-four">
+              <h4>Subscribe More Info</h4>
+              <div class="inputWrapper d-flex">
+                <small><i class="fa-solid fa-envelope-open-text"></i></small>
+                <input type="gmail" placeholder="Enter your Email">
+              </div>
+              <button type="submit" class="btn"><a href="#">Subscribe</a></button>
+            </div>
+            </form>
+
+          </div>
+
+          </div>
+          <!-- section one -->
+          
+          
+        </div><hr>
+
+        <div class="socialMeedia-Wrapper">
+          <div class="social">
+          <a href="#"><small><i class="fab fa-whatsapp"></i></small></a>
+          <a href="#"><small><i class="fab fa-facebook-f"></i></small></a>
+          <a href="#"><small><i class="fab fa-x-twitter"></i></small></a>
+          <a href="#"><small><i class="fab fa-instagram"></i></small></a>
+          </div>
+          <div class="powerandreserve">
+          <div class="Powerby">
+            <p>Powerby: mjecho</p>
+          </div>
+          <div class="copywrite-wrapper">
+            <p>2024</p>
+            <a href="#"><small><i class="fa-regular fa-copyright"></i></small></a>
+            <p>All Right reserved</p>
+          </div>
+          </div>
+        </div>
+      </footer>
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+    <script src="/cracked_cdns/cracked_min.js"></script>
+    <script src="/cracked_cdns/crackedPopper.js"></script>
+    <script src="/cracked_cdns/crackedJqueryCdn.js"></script>
+     <script src="/acount/reg-form.js"></script>
+</body>
+</html>

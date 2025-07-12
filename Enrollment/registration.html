@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./registration.css">
+    <link rel="stylesheet" href="/cracked_cdns/cracked_css.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+       crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+    <div class="enrollmentform-container"> 
+                          <form action="https://formsubmit.co/119a136fb9f4eb7d3b088951e482e888" method="POST" id="registrationform">
+
+                             <input type="hidden" name="_template" value="box">
+                             <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_autoresponse" value="Thanks for registering with us , check you gmail for feedback.">
+
+                            <h4 class="packages">REGISTRATION FORM</h4>
+                            <div class="mb-3 input-wrapper">
+                              <label for="fullname" class="form-label fullname-label">full name</label>
+                              <input type="text" class="form-input full-name" id="fullname" name="fullName" required>
+                            </div>
+
+                            <div class="mb-3 input-wrapper">
+                              <label for="email" class="form-label" id="email">Email Address</label>
+                              <input type="email" id="emailInput" class="form-input" name="email" required>
+                            </div>
+
+                            <div class="mb-3 input-wrapper">
+                              <label for="mobileNumber" class="form-label" id="mobileNumber">Mobile Number</label>
+                              <input type="tel" id="phoneInput" class="form-input" name="phone" required>
+                            </div>
+
+                            <div class="mb-3 gender-wrapper">
+                              <label for="" class="gendertitle-label">Sex</label>
+                              <input type="radio" id="male" class="check-box" value="Male" name="genderselection">
+                              <label for="male" class="form-label">Male</label>
+
+                              <input type="radio" id="female" class="check-box" value="Female" name="genderselection">
+                              <label for="female" class="form-label">female</label>
+                            </div>
+
+                            <div class="mb-3 select-container text-center">
+                              <h4 class="packages">ICT Professional Courses</h4>
+                              <select name="ICT_couses_Register_for" id="courseSelection" class="select-value">
+                                <option value="Web Development">Web Development</option>
+                                <option value="Mobile App Developement">Mobile App Developement</option>
+                                <option value="Blender Animation">Blender Animation</option>
+                                <option value="audiono robot programing">audiono robot programing</option>
+                                <option value="professional Graphic Design">professional Graphic Design</option>
+                                <option value="Home Electrical/Electronics maintainance">Home Electrical/Electronics maintainance</option>
+                              </select>
+                            </div>
+
+                            <div class="mb-3 select-container">
+                              <label for="" class="form-label">Country</label>
+                              <select name="Nationality" id="Country" class="select-value">
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="United State">United State</option>
+                              </select>
+                            </div>
+
+                            <div class="mb-3 select-container">
+                              <label for="region" class="form-label">Region</label>
+                              <input type="text" id="region" class="form-input" name="Region" required>
+                            </div>
+
+                            <div class="mb-3 select-container">
+                              <label for="AddressInput" class="form-label">Address</label>
+                              <input type="text" class="select-value" id="AddressInput" placeholder="Clear & Simple Address." name="Address" required>
+                            </div>
+
+                            <h4 class="packages">Learning Package</h4>
+                            <div class="mb-3 option-container">
+                              <label for="threeMonth" class="form-label">3 Months:</label>
+                              <div class="pricing-wrapper">
+                              <input type="radio" class="check-box" id="threeMonth" name="product" value="#150,000" onclick="showprice('threemonthpriceValue')">
+                              <div class="price">
+                                <span id="threemonthpriceValue" class="text-muted d-none">150,000</span>
+                              </div>
+                              </div>
+
+                              <label for="sixMonth" class="form-label">6 Months:</label>
+                              <div class="pricing-wrapper">
+                              <input type="radio" class="check-box" id="sixMonth" name="product" value="#300,000" onclick="showprice('sixmonnthpriceValue')">
+                              <div class="price">
+                                <span id="sixmonnthpriceValue" class="text-muted d-none">300,000</span>
+                              </div>
+                              </div>
+
+                              <label for="NinMonth" class="form-label">9 Months:</label>
+                              <div class="pricing-wrapper">
+                              <input type="radio" class="check-box" id="NinMonth" name="product" value="#450,000" onclick="showprice('ninmonnthpriceValue')">
+                              <div class="price">
+                                <span id="ninmonnthpriceValue" class="text-muted d-none">450,000</span>
+                              </div>
+                              </div>
+
+                              <label for="oneYear" class="form-label">A Year:</label>
+                              <div class="pricing-wrapper">
+                              <input type="radio" class="check-box" id="oneYear" name="product" value="#600,000" onclick="showprice('oneyearpriceValue')">
+                              <div class="price">
+                                <span id="oneyearpriceValue" class="text-muted d-none">600,000</span>
+                              </div>
+                            </div>
+                            </div>
+                            <!-- confirmation button -->
+                            <div class="buttonwrapper text-center">
+                            <button class="btn btn-primary" onclick="openModal()">Comfirm</button>
+                            </div>
+                              <!-- </form> -->
+                              <!-- confirmationModal -->
+                             <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="confirmationModalLabel">Confirm Your Details</h5>
+                              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
+                          </div>
+                          <div class="modal-body confirmmodal-container">
+                            <h5 class="text-center" id="modalCourses"></h5>
+                              <p><strong>Full Name:</strong><span id="modalName"></span></p>
+                              <p><strong>Email:</strong><span id="modalEmail"></span></p>
+                              <p><strong>Phone:</strong><span id="modalPhone"></span></p>
+                              <p><strong>Package:</strong><span id="modalPackage"></span></p>
+                              <p><strong>Price:</strong><span id="modalPrice"></span></p>
+                              <p><strong>Gender:</strong><span id="modalGender"></span></p>
+                              <p><strong>Nationality:</strong><span id="modalNationality"></span></p>
+                              <p><strong>Region:</strong><span id="modalRegion"></span></p>
+
+                              <div class="addresswrapper">
+                                <p><strong>Address:</strong><span id="modalAddress"></span></p>
+                              </div>
+
+                              <div class="dateand-timewrapper">
+                              <p><strong>Date:</strong><span id="modalDate"></span></p>
+                              <p><span id="modalTime"></span></p>
+                              </div>
+
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                                <button type="submit" class="btn btn-success">Submit</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                             </div>
+                            </form>
+
+     </div> 
+    </div>
+    
+
+  
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+    <script src="/cracked_cdns/cracked_min.js"></script>
+    <script src="/cracked_cdns/crackedPopper.js"></script>
+    <script src="/cracked_cdns/crackedJqueryCdn.js"></script>
+    <script src="/acount/reg-form.js"></script>
+     <!-- <script src="/service_page/service.js"></script> -->
+</body>
+</html>

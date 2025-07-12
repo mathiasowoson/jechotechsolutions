@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "poppins" sans-serif;
+
+}
+body{
+    background-color: rgb(49, 45, 45);
+}
+#search-Btn:active{
+    background-color: rgb(105, 92, 92);
+    color: white;
+    transition: background-color 0.3s;
+}
+.search-container{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+    margin: 1em auto;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 80em;
+}
+.search-container input{
+    font-family: 500;
+    border-radius: 0.2em;
+    border: none;
+    padding: 1em;
+}
+#search-Btn{
+    border-radius: 7px;
+}
+.loader{
+    display: none;
+    height: 15em;
+    width: 15em;
+    border: 3em solid #3a4379;
+    border-radius: 50%;
+    border-top-color: #13fc97;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    animation: spin 3s infinite;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    margin: 1.5em;
+    border-radius: 0.5em;
+}
+.container img{
+    width: 100%;
+    border-radius: 5px;
+}
+.container button{
+    margin-top: 1em;
+    padding: 0.6em 0;
+    border-radius: 0.5em;
+    background-color: rgb(85, 178, 221);
+    color: #ffff;
+    border: none;
+}
+.container button:focus{
+    background-color: rgb(20, 95, 129);
+}
+.container button:active{
+    background-color: rgb(139, 181, 201);
+}
+@media screen and (max-width:756px){
+    .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:576px){
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+
+@keyframes spin{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+

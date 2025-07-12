@@ -1,0 +1,116 @@
+.ContactHero-section{
+  width: 100%;
+  margin: 0 auto; /*Center the carousel horizontally */
+  height: 300px; /* Adjust the height as needed */
+  position: relative;
+  overflow: hidden; /* Ensure the carousel is clean with no border or overflow */
+ background-image: url('/CardPhoto_folder/TeamConnect.png');
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.ContactBig-screen h5, .ContactSmall-screen h5{
+    color: rgb(210, 150, 9);
+}
+
+/* contactSectionOne */
+.contactWrapOne{
+    display: flex;
+    gap: 5em;
+}
+.subwrapOne{
+    display: flex;
+    gap: 0.5em;
+}
+.subwrapOne small{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.6em;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+.innerWrap h2{
+    font-weight: bold;
+    font-size: 0.8em;
+}
+.innerWrap p{
+    font-size: 0.8em;
+    color: rgb(71, 70, 70);
+    width: 200px;
+}
+.contactSub-wrapper h3{
+    font-weight: bold;
+}
+.contactSub-wrapper p{
+    color: rgb(40, 40, 40);
+}
+.contactWrapper-two{
+    background-color: rgb(62, 63, 63); 
+}
+.contactInput-container button{
+    padding: 0.6em 1em !important;
+    margin-top: 1em !important;
+    margin-left: -10px;
+    color: white !important;
+    font-weight: bold;
+    font-size: 0.8em !important;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(33, 34, 34); 
+}
+@media(max-width:800px){
+    .contactWrapper-two{
+        width: 100%;
+    }
+}
+.inputwrap, .subInput{
+    display: flex;
+    flex-direction: column;
+}
+.socialWrapper{
+    display: flex;
+    gap: 1.2em;
+    width: 350px;
+    padding-top: 1.5em !important;
+   border-top: 1px solid rgb(171, 147, 147);
+}
+.socialWrapper h5{
+    font-weight: bold;
+    font-size: 0.8em;
+}
+.socialWrapper .socialfont-wrap{
+    display: flex;
+    gap: 1em;
+}
+.socialfont-wrap h4{
+    font-size: 0.8em;
+    font-weight: bold;
+    color: rgb(124, 79, 20);
+}
+/* section-two */
+.mapSection{
+    background-image: url('/SubPhotos/MapPhoto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+@media(max-width:800px){
+    .mapSection{
+        width: 100%;
+        margin: 2em;
+    }
+.contactWrapOne{
+    display: block !important;
+}
+    
+}
+@media(min-width:700px){
+    .mapSection{
+        width: 1300px;
+        margin: 2em;
+    }
+}

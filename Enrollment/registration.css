@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(to right, #f1f0f0, #dcd9d9, #997c7c);
+}
+.enrollmentform-container{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.1em 1.1em  rgb(0,0,0,0.2);
+    width: 90%;
+    background: linear-gradient(to right, #f1f0f0, #dcd9d9, #997c7c);
+}
+.enrollmentform-container form {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+form .input-wrapper .input-label, .gendertitle-label, .select-container .packages, form .packages {
+    font-weight: bold;
+    font-size: 0.8em;
+    color: rgb(131, 130, 130);
+    text-align: right;
+}
+.select-container .packages, form .packages {
+    margin-right: 10em !important;
+}
+
+.form-input, .select-container .select-value {
+    width: 100%;
+   margin-left: 2em;
+   background-color: white;
+   color: #474646;
+   font-size: 0.85em;
+   border: none;
+   box-shadow: 0 0.1em 1.1em  rgb(0,0,0,0.2);
+   border-radius: 0.3em;
+}
+.option-container {
+    display: flex;
+}
+.input-wrapper, form .select-container, .option-container .pricing-wrapper {
+    display: block;
+}
+.pricing-wrapper {
+    padding: 1em;
+}
+.confirmmodal-container{
+    padding: 10px !important;
+}
+.confirmmodal-container strong{
+    font-size: 0.7em !important;
+    color: rgb(148, 108, 69);
+}
+.confirmmodal-container span{
+    font-size: 0.7em !important;
+    padding: 8px !important;
+    color: rgb(87, 85, 85);
+}
+.price span{
+        color: rgb(131, 130, 130);
+    }
+.dateand-timewrapper{
+    height: 30px !important;
+    width: 200px !important;
+    display: flex;
+    position: relative;
+    left: 270px;
+}
+.modal-header, .confirmmodal-container {
+    background: linear-gradient(to right, #eee, #c2c2c2, #997c7c);
+}
+
+@media(max-width: 565.98px) {
+    .enrollmentform-container {
+        width: 80%;
+        padding: 2em;
+        margin: 3.5em; 
+    }
+    .pricing-wrapper{
+        margin-left: -2em !important;
+    }
+    .input-wrapper, .select-container{
+        width: 80% !important;
+    }
+    .select-container .packages, .packages{
+        font-size: 0.6em !important;
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../../Documents/test/.git"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "APIs Projects"
+	}
+}

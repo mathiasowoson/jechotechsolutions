@@ -1,0 +1,57 @@
+.faqsection-one{
+    margin-top: 2.5em;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.faqsection-one h4{
+   font-weight: bold;
+   font-size: 1.2em;
+   font-family: Arial, sans-serif;
+}
+@media(max-width:565.98px){
+    .faqsection-one{
+        width: 85%;
+        margin-left: 20px;
+    }
+    .fagsection-two{
+        padding: 2em !important;
+    }
+    .faqsection-one p {
+        font-size: 13px;
+    }
+}
+@media(min-width:575.98px){
+    .faqsection-one{
+        margin-left: 19em;
+    }
+    .faqsection-one h4{
+        font-size: 2em;
+    }
+    .fagsection-two{
+        padding: 3em !important;
+    }
+}
+.basic-questions h4, 
+.roleofpublict-realtionteam h4, 
+.measuringservice-success h4, 
+.enrollment-exercise h4, 
+.Payment-strategy h4{
+    font-size: 1.3em;
+    color: rgb(66, 64, 64);
+    margin-top: 2em;
+}
+.accordion-button{
+   background-color: rgb(228, 227, 227) !important;
+   padding: 1.2em !important;
+   font-weight: bold !important;
+   font-size: 0.4em !important;
+   color: rgb(69, 67, 67);
+}
+.accordion-body{
+    font-weight: bold !important;
+    font-size: 0.7em !important;
+    color: rgb(69, 67, 67);
+}

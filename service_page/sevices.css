@@ -1,0 +1,475 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.fontImage img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.serviceCard-wrapp{
+    width: 170px;
+    height: 195px;
+    border-radius: 0.85em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgb(0,0,0,0.2);
+    background-color: rgb(33, 33, 33);
+}
+.serviceCard-wrapp h4{
+    color: white;
+}
+.serviceSection-one{
+    padding-top: 40px !important;
+    padding-bottom: 80px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(102, 100, 100);
+}
+.serviceRow{
+    display: flex;
+    gap: 4em; 
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.serviceRow a{
+    text-decoration: none !important;
+}
+
+.service-head{
+    color: white;
+    text-align: center;
+}
+/* SERVICE SECTION TWO cross container*/
+.serviceSection-two{
+    padding-bottom: 2em !important;
+}
+
+.appointment-wrapper{
+   background-color: rgb(195, 139, 9);
+   padding: 20px !important;
+   border-radius: 12px !important;
+   position: relative;
+   top: -3.5em;
+}
+.appointment-contact{
+    display: flex;
+    gap: 1em;
+    width: 300px !important;
+}
+.appointment-contact img{
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.appoinSub-contact h5{
+    font-size: 0.6em;
+    font-weight: bold;
+    color: white;
+}
+.appoinSub-contact a{
+    font-weight: bold;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: white;
+}
+.contactText-wrapper{
+    width: 300px;
+}
+.contactText-wrapper p{
+    font-size: 0.6em;
+    color: rgb(183, 176, 176);
+    font-weight: bold;
+}
+.appointment-wrapper button{
+    font-size: 0.6em;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border-radius: 5em !important;
+}
+
+/* SERVICE SECTION TWO cross container*/
+.serviceCircle-wrapper{
+    display: flex;
+    gap: 4em;
+}
+
+.serviceCover-circle{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.serviceCircle .serviceNum{
+    font-weight: bold;
+    font-size: 1em;
+    width: 30PX;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 130, 13);
+    color: white;
+    position: relative;
+    left: 2.7em !important;
+    top: -1.6em !important;
+}
+.serviceCircle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(233, 231, 231);
+
+}
+.serviceCircle h4{
+    font-weight: bold;
+    font-size: 0.8em;
+}
+.serviceCircle p{
+    font-weight: bold;
+    font-size:0.6em ;
+    margin: 2em;
+}
+.servicSection-twotext{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.servicSection-twotext p{
+    font-weight: bold;
+    color: rgb(66, 63, 63);
+    font-size: 0.9em;
+}
+.servicSection-twotext .out-process{
+   width: 200px;
+   border-radius: 2em;
+   padding: 0.3em !important;
+   font-weight: bold;
+   font-size: 1em;
+   background-color: white;
+   box-shadow: 0 6px 10px rgb(0,0,0,0.2);
+
+}
+
+.servicSection-twotext h2{
+    font-weight: bold;
+    font-size: 2.5em;
+}
+.servicSection-twotext small{
+    color: rgb(219, 152, 17);
+    font-size: 1em;
+}
+/* service modal application form */
+.modal-body{
+    background-color: #f3f1f1 !important;
+}
+.serviceform-container{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    padding: 0.6em;
+    gap: 0.5em;
+}
+.serviceform-container .serviceswitch-side{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.serviceswitch-side p{
+    position: relative;
+    margin-bottom: 1px;
+    font-size: 12px !important;
+    width: 90px !important;
+}
+.serviceform-container .serviceform-content{
+    height: 85vh;
+    display: flex; 
+    flex-direction: column;
+    overflow-y: auto;
+    align-items: center;
+}
+.off-btn, .on-btn{
+    width: 25px;
+    height: 19px;
+    border-radius: 15px;
+}
+.off-btn{
+    background-color: rgb(51, 51, 51);
+    color:  rgb(51, 51, 51);
+    width: 95px !important;
+    opacity: 1;
+}
+.switch-contaniner{
+    display: flex;
+    gap: 0px;
+    width: 40px;
+    height: 22px;
+    border-radius: 0.6em;
+    background-color: white;
+    margin-bottom: 1em;
+    background-color: rgb(68, 68, 68);
+}
+.on-btn{
+    background-color: hwb(77 25% 5%);
+    color: rgb(162, 242, 57);
+    width: 80px !important;
+    visibility: hidden;
+    position: relative !important;
+    z-index: 1 !important;
+}
+.offbtn{
+    visibility: hidden !important;
+}
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.serviceappliction-label{
+    font-weight: bold;
+    font-size: 12px;
+    color: rgb(73, 70, 70);
+}
+.input-content{
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid rgb(61, 41, 11);
+    color: rgb(75, 72, 72);
+    font-size: 12px !important;
+    width: 400px;
+}
+.category-selections{
+    width: 200px;
+    font-size: 2empx;
+    border: none;
+    border-bottom: 2px solid rgb(61, 41, 11);
+}
+.categorycontents{
+    display: none;
+}
+.serviceswitch-side p{
+font-size: 0.8em;
+}
+
+.input-wrapper label, 
+.categorycontents label, 
+#electricandelectroncServiceCategories, 
+.option-items, .option-itemsmobile, 
+.option-itemembedded, 
+.option-itemblender, 
+.option-itemgraphic, 
+.option-itemlectrical, 
+.input-categories label{
+    font-size: 0.9em;
+    color: rgb(144, 126, 105);
+}
+.category-title h5{
+    font-size: 1em;
+    color: rgb(144, 126, 105);
+    font-weight: 600;
+}
+.service-sugestion{
+    display: block;
+}
+.input-categories{
+    padding-top: 0.7em !important;
+}
+.categorycontents{
+    display: block;
+}
+.select-title h5{
+    font-weight: 600;
+    font-size: 1em;
+}
+.more-sugestbtn{
+    padding: 0.2em !important;
+    border-radius: 0.4em;
+    text-align: center;
+    font-size: 0.9em;
+    background-color: rgb(209, 215, 221);
+    border: none;
+    color: white;
+}
+.more-sugestbtn:hover{
+    background-color: rgb(173, 182, 191);
+}
+.more-sugestbtn:focus{
+    background-color: rgb(173, 182, 191);
+}
+.service-sugestion{
+    display: none;
+}
+/* service confirmation form page styling  */
+.serviceform-confirmpagecontainer{
+    width: 80% !important;
+    background: linear-gradient(160deg, rgba(206, 191, 156, 0.487),rgba(140, 114, 48, 0.487),rgba(91, 69, 11, 0.487));
+    padding: 12px !important;
+}
+.serviceform-confirmpagecontainer span {
+    color: bisque;
+    padding: 0.5em;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.serviceformpage-body{
+    background: linear-gradient(160deg, rgba(206, 191, 156, 0.487),rgba(140, 114, 48, 0.487),rgba(91, 69, 11, 0.487));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.confirm-servicecategory{
+    display: flex;
+    gap: 0.2em;
+}
+.serviceform-confirmpagecontainer strong{
+    font-size: 0.9em;
+    color: rgb(144, 126, 105);
+    padding-left: 0.6em;
+}
+.category-header{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+.category-title{
+    font-size: 1.2em;
+    color: rgb(144, 126, 105);
+    font-weight: 600;
+}
+/* querie sections */
+@media(max-width: 565.98px){
+    .serviceCard-wrapp{
+        width: 98% !important;
+        height: 80% !important;
+    }
+    .serviceCard-wrapp span{
+        font-size: 0.8em !important;
+    }
+    .serviceCard-wrapp h4 {
+        font-size: 0.6em !important;
+    }
+    .appointment-wrapper {
+        position: relative !important;
+    }
+    .appointment-wrapper a{
+        position: absolute !important;
+        top: 7em !important;
+    }
+    .appoinSub-contact {
+        position: absolute !important;
+        top: -2em !important;
+    }
+    .appointment-wrapper .phonebook_logo{
+        top: 1em !important;
+    }
+    .appointment-wrapper .appointcall{
+        visibility: hidden !important;
+    }
+    .servicSection-twotext .out-process{
+        margin-left: 4.5em !important;
+    }
+    .servicSection-twotext .out-process{
+        margin-left: 12em;
+    }
+    .serviceswitch-side {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.serviceappliction-label, .categorycontents h4 {
+    font-size: 12px !important;
+}
+.input-content {
+    width: 270px !important;
+}
+.servicSection-twotext{
+        padding-bottom: 1em !important;
+    }
+.appointment-wrapper{
+        display: flex;
+        gap: 2em;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+.serviceRow{
+        width: 100%;
+    }
+    .appointment-contact{
+        width: 100px !important;
+    }
+    .smallscreen-home a{
+        text-decoration: none !important;
+        color: rgb(238, 172, 91);
+    }
+    .modal-header h5 {
+        font-size: 0.7em !important;
+        padding: 1em !important;
+    }
+    .category-title h5{
+        font-size: 0.6em !important;
+        padding: 0.2em !important;
+    }
+    .category-title button {
+        font-size: 0.7em !important;
+    }
+    .modal-header{
+        padding: 1em !important;
+    }
+    .suggestion-title p{
+        font-size: 0.7em !important;
+        padding: 0.6em !important;
+    }
+}
+
+@media(min-width:565.98px){
+    .servicSection-twotext .out-process{
+        margin-left: 30% !important;
+    }
+ .servicSection-twotext{
+        padding-bottom: 5em !important;
+    }
+    .serviceCircle-wrapper .coverCircle-shift{
+        position: relative;
+        top: -3em !important;
+    }
+    .servicSection-twotext p{
+        width: 450px;
+    }
+ .serviceCircle-wrapper{
+        position: relative !important;
+        overflow-x: auto !important;
+    }
+    .serviceSection-two{
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .appointment-wrapper{
+        display: flex;
+        gap: 2em;
+    }
+}

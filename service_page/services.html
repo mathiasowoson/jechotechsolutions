@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our Services</title>
+    <link rel="stylesheet" href="/about_us/aboutUs.css">
+    <link rel="stylesheet" href="/cracked_cdns/cracked_css.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/home_page/teststyl.css">
+    <link rel="stylesheet" href="/contact_page/contact-page.css">
+    <link rel="stylesheet" href="/service_page/sevices.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+       crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="ContactHero-section">
+        <div class="about-card">
+            <!-- display for large screen -->
+            <div class="carousel-caption ContactBig-screen">
+              <h5>Our services</h5>
+            </div>
+            </div>
+        <!-- navigation section -->
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html">
+                <img src="/Logo_Folder/jechotech_logo.png" alt="">
+              </a>
+              <!-- Offcanvas Toggle Button -->
+              <button class="navbar-toggler smallScreen-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Offcanvas Navbar Content for small screens -->
+              <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title smallscreen-home" id="offcanvasNavbarLabel"><a href="/index.html">Home</a></h5>
+                  <button type="button" class="btn-close text-reset Button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body offanvsBody">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <!-- sign-up page modal button here-->
+                     <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#fullSscreenModal">Sign-Up</a>
+                    </li>
+                      
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="/services.html">Our service</a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/about_us/aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/contact_page/contact-Page.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/terms_and_conditions/terms&condition.html">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/private_policy/Privacy-policy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/faq_page/FAQ.html">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Navbar Content for large screens -->
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link Home" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/service_page/services.html">Our Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/about_us/aboutUs.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact_page/contact-Page.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- modal body content -->
+      <div class="modal fade" id="fullSscreenModal" tabindex="-1" aria-labelledby="fullScreenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content headerWrapper">
+                <div class="modal-header">
+                    <a href="/index.html" class="navbar-brand" id="fullScreenModalLabel">
+                      <img src="/Logo_Folder/jechotech_logo.png" alt="">
+                    </a>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body sigUp-container">
+              <!-- modal body contents -->
+                <div class="row signupSub-continer">
+                  <div class="col-8 col-md-6 signUp-text">
+                    <div class="signIn-wrapper">
+                      <h4>Create Account With JECHOTECH-Solution</h4>
+                      <div class="signup-txtWrapper">
+                        <p>Share your work and get Project!</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-8 col-md-6 signUp-input">
+                   <div class="login-container">
+                    <h3 class="text-center">Sign Up</h3>
+                    <form id="signupForm" onsubmit="registerSignUp(event)">
+                      <div class="mb-3">
+                        <input type="text" id="FirstName" class="formControl" placeholder="First name">
+                      </div>
+                      <div class="mb-3">
+                        <input type="text" id="lastName" class="formControl" placeholder="last name">
+                      </div>
+                      <div class="mb-3">
+                        <input type="email" id="emailAddress" class="formControl" placeholder="Email Address">
+                      </div>
+                      <div class="mb-3">
+                        <input type="text" id="password" class="formControl" placeholder="password">
+                      </div>
+                      <div class="checkbox-wrapper">
+                        <input type="checkbox" class="checkBox-input" id="checkboxInput">
+                        <p>Accept terms & Conditions</p>
+                      </div>
+                      <div class="mb-3">
+                        <!-- modal button for second modal within for login for page -->
+                      <button type="button" class="actionButton w-100" id="joinUs" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Already Have Account?</button>
+                      </div>
+                      <p>______________ or _______________</p>
+                     
+                        <div class="mt-3">
+                          <button type="button" class="actionButton-white w-100" id="joinUs">Sign up with google</button>
+                          </div>
+                          <div>
+                            <div class="mt-1">
+                            <button type="button" class="actionButton w-100" id="joinUs">Sign up with Apple</button>
+                            </div>
+                            </div>
+                    </form>
+                   </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- second modal-body content for login page -->
+     <div class="modal fade" id="exampleModalToggle2" tabindex="-1" aria-labelledby="exampleModalToggleLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content headerWrapper">
+              <div class="modal-header">
+                  <a href="/index.html" class="navbar-brand" id="fullScreenModalLabel">
+                    <img src="/Logo_Folder/jechotech_logo.png" alt="">
+                  </a>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body sigUp-container">
+            <!--second modal body contents -->
+              <div class="row signupSub-continer">
+                <div class="col-8 col-md-6 signUp-text">
+                  <div class="signIn-wrapper">
+                    <h4>Create Account With JECHOTECH-Solution</h4>
+                    <div class="signup-txtWrapper">
+                      <p>Share your work and get Project!</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-8 col-md-6 signUp-input">
+                 <div class="login-container">
+                  <h3 class="text-center">Login In</h3>
+                  <form id="loginForm" onsubmit="validateLogin(event)">
+                    <div class="mb-3">
+                      <input type="text" id="username" class="formControl" placeholder="username" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <input type="text" id="password" class="formControl" placeholder="password" required>
+                    </div>
+                    <div class="checkbox-wrapper">
+                      <input type="checkbox" class="checkBox-input" id="checkboxInput">
+                      <p>Accept terms & Conditions</p>
+                    </div>
+                    <div class="mb-3">
+                      <!-- modal button for second modal within for login for page -->
+                    <button type="submit" class="actionButton w-100" id="joinUs">Submit</button>
+                    </div>
+                     <!-- loader -->
+                     <div class="loader text-center my-3">
+                      <div class="spinner-border text-primary jecho-pin" role="status">jecho
+                      </div>
+                    </div>
+                    <p>___________ or ______________</p>
+                    <!-- error message display -->
+                     <div class="error-message" id="errorMessage">Incorrect username or password. Please try again.</div>
+                      <div class="mt-3">
+                        <button type="button" class="actionButton-white w-100" id="joinUs">Sign up with google</button>
+                        </div>
+                        <div>
+                          <div class="mt-1">
+                          <button type="button" class="actionButton w-100" id="joinUs">Sign up with Apple</button>
+                          </div>
+                          </div>
+                  </form>
+                 </div>
+                </div>
+              </div>
+          </div>
+          </div>
+      </div>
+   </div>
+    </section>
+    <section class="serviceSection-one">
+      <!-- service modal for form registrations -->
+        <!-- <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_autoresponse" value="Thanks for enrolling! We'll contact you soon."> -->
+
+      <div class="modal fade" id="serviceRegistrationForm" tabindex="-1" aria-labelledby="fullScreenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="fullScreenModalLabel">What do you you need us to do for you?</h5>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="serviceform-container">
+                <div class="serviceswitch-side">
+                  <div class="category-title">
+                    <h5>Categories</h5><hr>
+                  </div>
+                  <!-- button here trigger suggest section in the form -->
+                  <div class="sugestbotton-wraper category-title">
+                    <button class="more-sugestbtn" id="showSugest" onclick="moresugest()">Open Sugestion</button>
+                   </div>
+                  <p>Web Dev</p>
+                  <button class="switch-contaniner" data-target="contentOne">
+                    <span class="off-btn" data-target="onBtnOne">o</span>
+                    <span class="on-btn" id="onBtnOne">o</span>
+                  </button>
+
+                  <p>Mobile-App Dev</p>
+                  <button class="switch-contaniner" data-target="contentTwo">
+                    <span class="off-btn" data-target="onBtnTwo">o</span>
+                    <span class="on-btn" id="onBtnTwo">o</span>
+                  </button>
+
+                  <p>Arduino & Intro To Robotic programming</p>
+                  <button class="switch-contaniner" data-target="contentThree">
+                    <span class="off-btn" data-target="onBtnThree">o</span>
+                    <span class="on-btn" id="onBtnThree">o</span>
+                  </button>
+
+                  <p>Blender Animation(cratch)</p>
+                  <button class="switch-contaniner"data-target="contentFour">
+                    <span class="off-btn" data-target="onBtnFour">o</span>
+                    <span class="on-btn" id="onBtnFour">o</span>
+                  </button>
+
+                  <p>Graphic Design Pro</p>
+                  <button class="switch-contaniner" data-target="contentFive">
+                    <span class="off-btn" data-target="onBtnFive">o</span>
+                    <span class="on-btn" id="onBtnFive">o</span>
+                  </button>
+
+                  <p>Electrical/Electronic Home maintenance</p>
+                  <button class="switch-contaniner" data-target="contentSix">
+                    <span class="off-btn" data-target="onBtnSix">o</span>
+                    <span class="on-btn" id="onBtnSix">o</span>
+                  </button>
+                </div>
+                <form action="https://formsubmit.co/119a136fb9f4eb7d3b088951e482e888" method="POST" class="service-formcontainer">
+                <div class="serviceform-content">
+                    <div class="input-wrapper mt-3">
+                      <label for="organisationName" class="serviceappliction-label">Name Of Organisation:</label>
+                      <input type="text" class="input-content" id="organisationName" name="Organisation" required>
+                    </div>
+
+                    <div class="input-wrapper mt-3">
+                      <label for="personalName" class="serviceappliction-label">Position/Personal Name:</label>
+                      <input type="text" class="input-content" id="personalName" name="Position/Personal_Name" required>
+                    </div>
+
+                    <div class="input-wrapper mt-3">
+                      <label for="serviceGmail" class="serviceappliction-label">Gmail:</label>
+                      <input type="email" class="input-content" id="serviceGmail" name="Email" required>
+                    </div>
+
+                    <div class="categorycontents mt-3" id="contentOne">
+                      <div class="category-header">
+                        <!-- <h4 class="category-title">Web-Developement</h4> -->
+                      </div>
+                      <div class="select-title">
+                        <h5>Service</h5>
+                      </div>
+                      <label for="webdevServiceselectlist" class="serviceappliction-label">Web-Developement:</label><br>
+                      <select name="Web_Developement" id="webdevServiceselectlist" class="category-selections input-content">
+                        <option value="" class="option-items input-content">None</option>
+                      </select>
+                    </div>
+
+                    <div class="categorycontents"  id="contentTwo" >
+                      <div class="category-header">
+                        <!-- <h4 class="category-title">Mobile-App Developement</h4> -->
+                      </div>
+                      <div class="select-title">
+                        <h5>Service</h5>
+                      </div>
+                      <label for="mobileAppServiceselectlist" class="serviceappliction-label">Mobile-App Developement:</label><br>
+                      <select name="Mobile_App_Developement" id="mobileAppServiceselectlist" class="category-selections input-content">
+                        <option value="" class="option-itemsmobile input-content">None</option>
+                      </select>
+                    </div>
+
+                    <div class="categorycontents"  id="contentThree">
+                      <div class="category-header">
+                        <!-- <h4 class="category-title">Arduino & Intro To Robotic Programing</h4> -->
+                      </div>
+                      <div class="select-title">
+                        <h5>Service</h5>
+                      </div>
+                      <label for="embeddedandardiunoServiceselectlist" class="serviceappliction-label">Arduino & Intro To Robotic Programing:</label><br>
+                      <select name="Arduino_And_Intro_To_Robotic_Programing" id="embeddedandardiunoServiceselectlist" class="category-selections input-content">
+                        <option value="" class="option-itemembedded input-content"></option>
+                      </select>
+                    </div>
+
+                    <div class="categorycontents"  id="contentFour" >
+                      <div class="category-header">
+                        <!-- <h4 class="category-title">Blender Animation(Cratch)</h4> -->
+                      </div>
+                      <div class="select-title">
+                        <h5>Service</h5>
+                      </div>
+                      <label for="blenderAnimationServiceselectlist" class="serviceappliction-label">Blender Animation(Cratch):</label><br>
+                      <select name="Blender_Animation(Cratch)" id="blenderAnimationServiceselectlist" class="category-selections input-content">
+                        <option value="" class="option-itemblender input-content"></option>
+                      </select>
+                    </div>
+
+                    <div class="categorycontents"  id="contentFive">
+                      <div class="category-header">
+                        <!-- <h4 class="category-title">Graphic Designing Pro</h4> -->
+                      </div>
+                      <div class="select-title">
+                        <h5>Service</h5>
+                      </div>
+                      <label for="graphicdesignServiceselectlist" class="serviceappliction-label">Graphic Designing Pro:</label>
+                      <select name="Graphic_Design" id="graphicdesignServiceselectlist" class="category-selections input-content">
+                        <option value="" class="option-itemgraphic input-content"></option>
+                      </select>
+                    </div>
+
+                    <div class="categorycontents"  id="contentSix">
+                      <div class="category-header">
+                        <!-- <h4 class="category-title">Electrical/Electronic Home maintenance</h4> -->
+                      </div>
+                      <div class="select-title">
+                        <h5>Service</h5>
+                      </div>
+                      <label for="electricandelectroncServiceselectlist" class="serviceappliction-label">Electrical/Electronic Home maintenance:</label><br>
+                      <select name="Electrical/Electronic_Home_Maintenance" id="electricandelectroncServiceselectlist" class="category-selections input-content">
+                        <option value="" class="option-itemlectrical input-content"></option>
+                      </select>
+                    </div>
+                    <div class="suggestion-title">
+                      <p>Any suggestion on how you want your work to done? "Click suggestion button"</p>
+                    </div>
+                    <div class="service-sugestion" id="serviceSugestshow">
+                      <div class="input-categories">
+                        <label for="alterCategories">Category</label><br>
+                        <input type="text" class="input-content" id="alternativeServicecategory" name="Category">
+                      </div>
+
+                      <div class="input-categories">
+                        <label for="alterDescriptions mt-3">Service Description</label><br>
+                        <textarea name="Description" class="input-content" id="alternativeServiceDescriptions"></textarea>
+                      </div>
+                    </div>
+
+                   <!-- service form confirmation button here -->
+                   <div class="buttonwrapper text-center">
+                    <button type="button" class="btn btn-primary" onclick="openserviceConfirm()" data-bs-target="#serviceFormcomfirmationpage" data-bs-toggle="modal">Comfirm</button>
+                    </div>
+                </div>
+                </form>
+
+               </div>
+            </div> 
+            </div>
+        </div>
+     </div>
+
+     <!-- service form confirmation before  submission -->
+     <div class="modal fade" id="serviceFormcomfirmationpage" tabindex="-1" aria-labelledby="fullScreenModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="fullScreenModalLabel">Contact Us if you don't get a feedback from us within 24 hours!</h5>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body serviceformpage-body">
+              <!-- here is the confiremation page -->
+               <div class="serviceform-confirmpagecontainer">
+               <p><strong>Name of organisations:</strong><span id="serviceRegconfirorganisation"></span></p>
+               <p><strong>Position/ Personal Name:</strong><span id="serviceRegconfirposition"></span></p>
+               <p><strong>Gmail:</strong><span id="serviceReconfirgmail"></span></p>
+               <div class="confirm-servicecategory">
+                <div class="fix-servicategory">
+                  <p><strong>Service:</strong><span id="serviceReconfirservicefixcategoryone"></span>
+                        <span id="serviceReconfirservicefixcategorytwo"></span>
+                         <span id="serviceReconfirservicefixcategorythree"></span>
+                           <span id="serviceReconfirservicefixcategoryfour"></span>
+                             <span id="serviceReconfirservicefixcategoryfive"></span>
+                                 <span id="serviceReconfirservicefixcategorsix"></span></p>
+                  <p><strong>Service Description:</strong><span id="serviceReconfirservicfixdescription"></span></p>
+                </div>
+
+                <div class="sugestservic-categtory">
+                  <p><span id="serviceReconfirsugestcategory"></span></p>
+                  <p><span id="serviceReconfirservicedescription"></span></p>
+                </div>
+
+               </div>
+               <div class="serviceconfirm-datewrapper">
+                <p><strong>Date:</strong><span id="serviceReconfirmDate"></span></p>
+               </div>
+               <div class="moder-footer">
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                 <button type="button" class="btn btn-success" onclick="document.querySelector('.service-formcontainer').submit();">
+                  Submit
+                </button>
+                
+               </div>
+               </div>
+          </div>
+          </div>
+      </div>
+    </div>
+   
+        <div class="row serviceRow">
+            <div class="col-4 col-md-2">
+              <a href="" data-bs-toggle="modal" data-bs-target="#serviceRegistrationForm">
+                <div class="serviceCard-wrapp">
+                    <div class="fontImage text-center">
+                    <img src="/CardPhoto_folder/Reflectgreen.png" alt="font image">
+                    </div>
+                    <span class="service-head">FOR:</span>
+                    <h4 class="text-center">Website Development project</h4>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-2">
+              <a href="" data-bs-toggle="modal" data-bs-target="#serviceRegistrationForm">
+                <div class="serviceCard-wrapp">
+                    <div class="fontImage text-center">
+                    <img src="/CardPhoto_folder/Reflectgreen.png" alt="font image">
+                    </div>
+                    <span class="service-head">FOR:</span>
+                    <h4 class="text-center">WebApp Development project</h4>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-2">
+              <a href="" data-bs-toggle="modal" data-bs-target="#serviceRegistrationForm">
+                <div class="serviceCard-wrapp">
+                    <div class="fontImage text-center">
+                    <img src="/CardPhoto_folder/Reflectgreen.png" alt="font image">
+                    </div>
+                    <span class="service-head">FOR:</span>
+                    <h4 class="text-center">Graphic Design's project</h4>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-2">
+              <a href="" data-bs-toggle="modal" data-bs-target="#serviceRegistrationForm">
+                <div class="serviceCard-wrapp">
+                    <div class="fontImage text-center">
+                    <img src="/CardPhoto_folder/Reflectgreen.png" alt="font image">
+                    </div>
+                    <span class="service-head">FOR:</span>
+                    <h4 class="text-center">Blender Animation(cratch) project</h4>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-2">
+              <a href="" data-bs-toggle="modal" data-bs-target="#serviceRegistrationForm">
+                <div class="serviceCard-wrapp">
+                    <div class="fontImage text-center">
+                    <img src="/CardPhoto_folder/Reflectgreen.png" alt="font image">
+                    </div>
+                    <span class="service-head">FOR:</span>
+                    <h4 class="text-center">Arduino Programing</h4>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-2">
+              <a href="" data-bs-toggle="modal" data-bs-target="#serviceRegistrationForm">
+                <div class="serviceCard-wrapp">
+                    <div class="fontImage text-center">
+                    <img src="/CardPhoto_folder/Reflectgreen.png" alt="font image">
+                    </div>
+                    <span class="service-head">FOR:</span>
+                    <h4 class="text-center">Home Elec/Elecronics maintenance</h4>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-2">
+              <a href="" data-bs-toggle="modal" data-bs-target="#serviceRegistrationForm">
+                <div class="serviceCard-wrapp">
+                    <div class="fontImage text-center">
+                    <img src="/CardPhoto_folder/Reflectgreen.png" alt="font image">
+                    </div>
+                    <span class="service-head">FOR:</span>
+                    <h4 class="text-center">Business Ideal?</h4>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-2">
+              <a href="" data-bs-toggle="modal" data-bs-target="#serviceRegistrationForm">
+                <div class="serviceCard-wrapp">
+                    <div class="fontImage text-center">
+                    <img src="/CardPhoto_folder/Reflectgreen.png" alt="font image">
+                    </div>
+                    <span class="service-head">FOR:</span>
+                    <h4 class="text-center">Do You Need Us For Other Services?</h4>
+                </div>
+              </a>
+            </div>
+        </div>
+    </section>
+    <section class="serviceSection-two">
+        <div class="appointment-wrapper">
+            <div class="appointment-contact">
+              <a href="tel:+234 8100688446" class="phonebook_logo">
+                <h4>
+                  <img src="/Logo_Folder/phonBook_logo-removebg-preview.png" alt="">
+                </h4>
+              </a>
+                <div class="appoinSub-contact">
+                  <a href="/department_page/preview_page.html">
+                    <h5>Get A FREE CONSULTATION</h5>
+                  </a>
+                    <p class="appointcall"><a href="tel:+234 8100688446">Call Me</a></p>
+                </div>
+            </div>
+            <div class="contactText-wrapper">
+                <p>We offer free consultations to help you get started with the right solution.
+                   You can also book an appointment to meet with our team in person..
+                  </p>
+            </div>
+            <a href="/Enrollment/registration.html">
+            <button class="btn btn-light">MAKE APPOINTMENT</button>
+            </a>
+            </div>
+            <div class="servicSection-twotext">
+              <h4 class="out-process">OUR PROCESS</h4>
+              <h2><small>Process</small> We Follow</h2>
+              <p>From idea to execution, we follow a structured process that ensures quality results.
+                 Each step is tailored to meet your goals with clear communication and expert guidance.
+                </p>
+            </div>
+            <div class="serviceCircle-wrapper">
+              <div class="serviceCover-circle coverCircle-shift">
+              <div class="serviceCircle">
+                <h4 class="serviceNum">01</h4>
+                <h4>Research Project</h4>
+                <p>We begin with deep research to understand your needs and the best possible solutions.</p>
+              </div>
+              </div>
+
+              <div class="serviceCover-circle">
+                <div class="serviceCircle">
+                  <h4 class="serviceNum">02</h4>
+                  <h4>Evaluation Plans</h4>
+                  <p>Each project is assessed through careful planning to track progress and ensure quality delivery.</p>
+                </div>
+                </div>
+
+                <div class="serviceCover-circle coverCircle-shift">
+                  <div class="serviceCircle">
+                    <h4 class="serviceNum">03</h4>
+                    <h4>Best Results</h4>
+                    <p>Our goal is excellence delivering results that exceed expectations every time.</p>
+                  </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 p-5 d-md-flex d-sm-block">
+            <div class="col-sm-12 col-md-6 d-block subFooter-one">
+            <div class="my-logo">
+              <img src="/Logo_Folder/jechotech_logo.png" alt="My logo">
+              <p>Jechotech-solution</p>
+            </div>
+            <div class="About-us">
+              <h4><a href="/about_us/aboutUs.html">About Us</a></h4>
+              <p>JECHOTECH-SOLUTION is a dynamic team of tech enthusiasts and engineers.</p>
+            </div>
+            <div class="contact-us">
+              <h4><a href="/contact_page/contact-Page.html">Contact Us</a></h4>
+              <div class="contacts">
+                <small><i class="fa-solid fa-phone-volume"></i></small>
+                <p><a href="tel:+2348100688446">Call Us</a></p>
+              </div>
+              <div class="gmail">
+                <small><i class="fa-solid fa-envelope-open-text"></i></small>
+                <p><a href="mailto:aowojechomathias@gmail.com">aowojechomathias@gmail.com</a></p>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 d-block subFooter-two">
+              <h4>Information</h4>
+              <ul>
+                <li><a href="/service_page/services.html">Services</a></li>
+                <li><a href="#">More Search</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#">Events</a></li>
+              </ul>
+            </div>
+            <!-- display on mobile-wiew but hidding on large screen -->
+
+            <div class="col-sm-12 col-md-6 d-block subFooter-three">
+              <h4>Helpful Links</h4>
+              <ul>
+                <li><a href="/service_page/services.html">Services</a></li>
+                <li><a href="/contact_page/contact-Page.html">Supports</a></li>
+                <li><a href="/terms_and_conditions/terms&condition.html">Terms & Condition</a></li>
+                <li><a href="/private_policy/Privacy-policy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <form action="https://formsubmit.co/aowojechomathias@gmail.com" method="POST">
+            <div class="col col-sm-12 col-md-6 d-block subFooter-four">
+              <h4>Subscribe More Info</h4>
+              <div class="inputWrapper d-flex">
+                <small><i class="fa-solid fa-envelope-open-text"></i></small>
+                <input type="gmail" placeholder="Enter your Email">
+              </div>
+              <button type="submit" class="btn"><a href="#">Subscribe</a></button>
+            </div>
+            </form>
+
+          </div>
+
+          </div>
+          <!-- section one -->
+          
+          
+        </div><hr>
+
+        <div class="socialMeedia-Wrapper">
+          <div class="social">
+          <a href="#"><small><i class="fab fa-whatsapp"></i></small></a>
+          <a href="#"><small><i class="fab fa-facebook-f"></i></small></a>
+          <a href="#"><small><i class="fab fa-x-twitter"></i></small></a>
+          <a href="#"><small><i class="fab fa-instagram"></i></small></a>
+          </div>
+          <div class="powerandreserve">
+          <div class="Powerby">
+            <p>Powerby: mjecho</p>
+          </div>
+          <div class="copywrite-wrapper">
+            <p>2024</p>
+            <a href="#"><small><i class="fa-regular fa-copyright"></i></small></a>
+            <p>All Right reserved</p>
+          </div>
+          </div>
+        </div>
+      </footer>
+   
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+    <script src="./service.js"></script>
+    <script src="/acount/reg-form.js"></script>
+    <script src="/cracked_cdns/cracked_min.js"></script>
+    <script src="/cracked_cdns/crackedPopper.js"></script>
+    <script src="/cracked_cdns/crackedJqueryCdn.js"></script>
+</body>
+</html>

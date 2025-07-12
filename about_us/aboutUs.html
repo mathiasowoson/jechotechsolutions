@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Us-page</title>
+    <link rel="stylesheet" href="./aboutUs.css">
+    <link rel="stylesheet" href="/cracked_cdns/cracked_css.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/home_page/teststyl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+       crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section class="AboutHero-section">
+        <div class="about-card">
+            <!-- display for large screen -->
+            <div class="carousel-caption d-none d-md-block aboutBig-screen">
+              <h5>Best <small>IT Solution</small></h5>
+              <h5>Company</h5>
+              <p>We don’t just code we animate your vision with 3D creativity using Blender tools.
+                 From design to delivery, we fuse IT skills with stunning animations.
+                </p>
+                <div class="heroButton-wrapper">
+                 <a class="btn btn-warning colorBtn" href="/Departmentpage.html">Get Start</a>
+                 <a class="btn btn-light trasparent-Button" href="/services.html">Our Services</a>
+            </div>
+            </div>
+
+            <!-- diplay for small screen -->
+            <div class="carousel-caption d-block d-md-none aboutSmall-screen">
+                <h5>Best <small>IT Solution</small></h5>
+                <h5>Company</h5>
+                <p>We don’t just code — we animate your vision with 3D creativity using Blender tools.
+                  From design to delivery, we fuse IT skills with stunning animations.
+                </p>
+                  <div class="heroButton-wrapper">
+                   <a class="btn btn-warning colorBtn" href="/department_page/Departmentpage.html">Get Start</a>
+                   <a class="btn btn-light trasparent-Button" href="/services.html">Our Services</a>
+              </div>
+              </div>
+            </div>
+        <!-- navigation section -->
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html">
+                <img src="/Logo_Folder/jechotech_logo.png" alt="">
+              </a>
+              <!-- Offcanvas Toggle Button -->
+              <button class="navbar-toggler smallScreen-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Offcanvas Navbar Content for small screens -->
+              <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    <a href="/index.html">Home</a>
+                  </h5>
+                  <button type="button" class="btn-close text-reset Button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body offanvsBody">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <!-- sign-up page modal button here-->
+                     <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#fullSscreenModal">Sign-Up</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/service_page/services.html">Our service</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="/aboutUs.html">About Us</a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/contact_page/contact-Page.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/terms_and_conditions/terms&condition.html">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/private_policy/Privacy-policy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/faq_page/FAQ.html">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Navbar Content for large screens -->
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link Home" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/service_page/services.html">Our Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/about_us/aboutUs.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact_page/contact-Page.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="modal fade" id="fullSscreenModal" tabindex="-1" aria-labelledby="fullScreenModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content headerWrapper">
+                    <div class="modal-header">
+                        <a href="/index.html" class="navbar-brand" id="fullScreenModalLabel">
+                          <img src="/Logo_Folder/jechotech_logo.png" alt="">
+                        </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body sigUp-container">
+                  <!-- modal body contents -->
+                    <div class="row signupSub-continer">
+                      <div class="col-8 col-md-6 signUp-text">
+                        <div class="signIn-wrapper">
+                          <h4>Create Account With JECHOTECH-SOLUTION</h4>
+                          <div class="signup-txtWrapper">
+                            <p>Share your work and get Project!</p>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="col-8 col-md-6 signUp-input">
+                       <div class="login-container">
+                        <h3 class="text-center">Sign Up</h3>
+                        <form id="signupForm" onsubmit="registerSignUp(event)">
+                          <div class="mb-3">
+                            <input type="text" id="FirstName" class="formControl" placeholder="First name">
+                          </div>
+                          <div class="mb-3">
+                            <input type="text" id="lastName" class="formControl" placeholder="last name">
+                          </div>
+                          <div class="mb-3">
+                            <input type="email" id="emailAddress" class="formControl" placeholder="Email Address">
+                          </div>
+                          <div class="mb-3">
+                            <input type="text" id="password" class="formControl" placeholder="password">
+                          </div>
+                          <div class="checkbox-wrapper">
+                            <input type="checkbox" class="checkBox-input" id="checkboxInput">
+                            <p>Accept terms & Conditions</p>
+                          </div>
+                          <div class="mb-3">
+                            <!-- modal button for second modal within for login for page -->
+                          <button type="button" class="actionButton w-100" id="joinUs" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Already Have Account?</button>
+                          </div>
+                          <p>______or _______</p>
+                         
+                            <div class="mt-3">
+                              <button type="button" class="actionButton-white w-100" id="joinUs">Sign up with google</button>
+                              </div>
+                              <div>
+                                <div class="mt-1">
+                                <button type="button" class="actionButton w-100" id="joinUs">Sign up with Apple</button>
+                                </div>
+                                </div>
+                                <button type="button" class="actionButton w-100" id="joinUs" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Submit</button>
+                        </form>
+                       </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+         </div>
+    
+         <!-- second modal-body content for login page -->
+         <div class="modal fade" id="exampleModalToggle2" tabindex="-1" aria-labelledby="exampleModalToggleLabel2" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content headerWrapper">
+                  <div class="modal-header">
+                      <a href="/index.html" class="navbar-brand" id="fullScreenModalLabel">
+                        <img src="/Logo_Folder/jechotech_logo.png" alt="">
+                      </a>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body sigUp-container">
+                <!--second modal body contents -->
+                  <div class="row signupSub-continer">
+                    <div class="col-8 col-md-6 signUp-text">
+                      <div class="signIn-wrapper">
+                        <h4>Createn Account With JECHOTECH-SOLUTION</h4>
+                        <div class="signup-txtWrapper">
+                          <p>Share your work and get Project!</p>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="col-8 col-md-6 signUp-input">
+                     <div class="login-container">
+                      <h3 class="text-center">Login In</h3>
+                      <form id="loginForm" onsubmit="validateLogin(event)">
+                        <div class="mb-3">
+                          <input type="text" id="username" class="formControl" placeholder="username" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                          <input type="text" id="password" class="formControl" placeholder="password" required>
+                        </div>
+                        <div class="checkbox-wrapper">
+                          <input type="checkbox" class="checkBox-input" id="checkboxInput">
+                          <p>Accept terms & Conditions</p>
+                        </div>
+                        <div class="mb-3">
+                          <!-- modal button for second modal within for login for page -->
+                        <button type="submit" class="actionButton w-100" id="joinUs">Submit</button>
+                        </div>
+                         <!-- loader -->
+                         <div class="loader text-center my-3">
+                          <div class="spinner-border text-primary jecho-pin" role="status">jecho
+                          </div>
+                        </div>
+                        <p>______  or ________</p>
+                        <!-- error message display -->
+                         <div class="error-message" id="errorMessage">Incorrect username or password. Please try again.</div>
+                          <div class="mt-3">
+                            <button type="button" class="actionButton-white w-100" id="joinUs">Sign up with google</button>
+                            </div>
+                            <div>
+                              <div class="mt-1">
+                              <button type="button" class="actionButton w-100" id="joinUs">Sign up with Apple</button>
+                              </div>
+                              </div>
+                      </form>
+                     </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+       </div>
+    </section>
+
+    <section class="aboutSection-one">
+      <div class="aboutUs">
+        <h5>About Us</h5>
+        <!-- divider -->
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+            <li class="breadcrumb-item active aboutDiver" aria-current="page">About Us</li>
+          </ol>
+        </nav>   
+      </div>
+    </section>
+
+    <section class="aboutSectiont-three">
+      <div class="introWrapper">
+        <div class="row">
+          <div class="col-8 col-md-6 about-text">
+            <div class="p-5 text-black text-content">
+              <!-- image is here -->
+            </div>
+          </div>
+
+          <div class="col-8 col-md-6 introCard">
+            <div class="p-2">
+              <div class="row">
+                <div class="aboutUs-title">
+                  <h4>We Always Make The Best</h4>
+                </div>
+                <div class="scrollable-wrapper mt-1">
+                  <!--About us write-up scrollable page-content -->
+                   <div class="scrollable-container">
+                   <p>Welcome to <strong>JECHOTECH-SOLUTION</strong>, your one-top destination for all things IT and beyond! <br>
+                   At <strong>JECHOTECH-SOLUTION</strong>, we pride ourselves on delivering cutting-edge technology solution while empowering individuals and businesses to thrive in a 
+                   rapidly evolving didgital world. Whether you are looking to enroll in our conprehensive courses or hire us for a tailored IT solution, we are here to
+                   bring your vision to life.</p>
+                   <h4 class="abouttext-title">Who We Are</h4>
+                   <p><strong>JECHOTECH-SOLUTION</strong> is a dynamic team of tech enthusiasts, engineers, and creative committed to solving every technological challenge with precision and innovation.
+                   Our mission is to deliver high-quality, practical, and futuristic solution while fosting learning opportunities  for individual passionate about technology.</p>
+                   <h4 class="abouttext-title">Our Services</h4>
+                   <p>We offer a broad range of services design to cater to diverse technology and maintenance needs. here's what we bring to the table:</p>
+                   <h4>1. Web Developement</h4>
+                   <p>Your only one presence matters, and we ensured it stands out. Our team specializes in designing and developing modern, responsive websites tailored
+                   to your brand and business goals. from corperate websites to e-commerce platforms, we creat experience that engage and convert.</p>
+                   <h4>2. Web App Developement</h4>
+                   <p>Need a custom web Application? we've got you cover. Our developer are skills to develope and creating robust, scalable web Application that solve real-world problems.
+                    we'll craft a solutin that fit perfectlty.
+                   </p>
+                   <h4>3. Mobile App Developement</h4>
+                   <p>Bring your ideas to life with our mobile app Development services. we design and develope innovative android an iOS apps that are not only functional but also 
+                   user-friendly and visually stunning. whether it's for business, entertainment, or productivity, our apps deliver value.</p>
+                   <h4>4. Blender Animation for Business</h4>
+                   <p>Stand out in your market with  our <span>Blender Animation Services.</span> We create compeling 3D animations for advertisement. presentations, and storytelling.
+                  Whether you'er promoting a product or delivering a pitch, our animation make our message memorable and impactful.</p>
+                  <h4>5. Arduino and Robotic Programming</h4>
+                  <p>Dive into the future with our expertise in embedded systems and robotics. We design and program intelligent systems for a wide range of applications, from home
+                    automation to industrial solutions. Let us bring your innovative hardware ideas to life.
+                  </p>
+                  <h4>6. Home Electrical/Electrnic Maintenance</h4>
+                  <p>We extend our expertise between home and businesses with top-notch electrical and electronics maintenance services. From troubleshooting appliances to setting up 
+                    advanced systems we ensure your home or office runs smoothly and efficiently.
+                  </p>
+                  <h4 class="abouttext-title">Enoll in Our Courses</h4>
+                  <p>At <strong>JECHOTECH-SOLUTION</strong>, we believe in empowering the next generation of tech experts. That's why we offer a variety of couses tailored  to equip
+                    you with practical skills and acknowlege in high-demand fields.
+                  </p>
+                  <h4 class="abouttext-title">What You'll Learn With Us:</h4>
+                  <p><Strong>. Web Developement:</Strong> how to build professional, responsive websites from scratch, mastering tools like HTML, CSS, JAvaScript, and popular frameworks</p>
+                  <p><strong>. Web App Development:</strong> Develop web appliction using advanced framework such as React, Angular. and Node.js while mastering database integration and cloud deployment.</p>
+                  <p><strong>. Mobile App Developement:</strong> Creat native and cross-platform mobile apps with tools like Flutter, React Native, and swift. learn to design intuitive
+                  user</p>
+                    <p><strong>. Blender Animation:</strong> Unlock the secrets of creating stunning 3D animations. From modeling and texturing to rigging and rendering , we'll teach you everything you need to creat visual masterpieces. </P>
+                    <p><strong>. Arduino and Robotic Programming:</strong> Dive deep into microcontroller programming, circle design, and robotics. Learn to build smart devices, automate processes,and bring robotics to life.</p>
+                    <p><strong>. Electrical and Electronic Maintenance:</strong> GAin hand-on experience in troubleshooting, reparing , and maintening elecrical systems
+                    and electronic devices. Learn to work safely and efficiently in residential and commercial environments.</p>
+                    <h4 class="abouttext-title">Flexible Tuition Packages</h4>
+                    <p>We make learning accessible with fixed price tuition packages that scheduled montly and yearly. choose the that fit your schedule and start your journey
+                      toward mastering the skills that will shape your future. </p>
+                      <h4 class="abouttext-title">Why Choose Us?</h4>
+                      <p><strong>. Expertise:</strong> our team consist of highly skilled professionals with years of industril experience.</p>
+                      <p><strong>. Conprehensive Solutions:</strong> From It services to Home maintenance, we cover it all under one roof.</p>
+                      <p><strong>. Practical Learning:</strong> Our courses focus on hands-on learning to prepare you for real-world challenges.</p>
+                      <p><strong>. Client-centric Appoach:</strong> Your goals are our Priority. We tailor every services and learning experience to meet your specific needs.</p>
+                      <p>At <strong>JECHOTECH-SOLUTION</strong>, we dont't just solves problems; we creat opportunities. Let us help you achieve your dreams, whether is mastering new skills,
+                        growing your business, or maintening your home systems. Join us today and become part of a community where innovation meet excellence. </p>
+                        <strong><p class="aboutfooter-text">JECHOTECH-SOLUTION-Your Trusted Partner for IT Solution and Education.</p></strong>
+
+                        <h3><u>Our Core Value</u></h3>
+                        <p>At <strong>JECHOTECH-SOLUTION</strong>, our core value are the foundation of all we do. They guild our decisions. inspire our creativity, and drive our commitment
+                           to delivering exeptional solution and Education. This principle define who we are and what we stand for as we provide unparelled IT services and learning opportunities.
+                          </p>
+                          <h4>1. innovation</h4>
+                          <p>We thrive on creativity and forward. whether its developing cuting-ede websites, crafting dynamic mobile apps, designing intricate animations
+                            or programming advance robots, we embrace innovation to deliver solutions that are head of the curve. At <strong>JECHOTECH-SOLUTION</strong>,
+                          we believe there's is always a better, smarter ways to solve problems, and we committed to finding it.
+                          </p>
+                          <h4>2. Excellence</h4>
+                         <p> Our passion for quality drive us exceed expectations in every Project and course. from creating user-friendly digital platforms to ensure high standards in home maintenance servives.
+                          we don't settle for mediocrity. Excellence is woven into every solution we deliver, ensuring our clients and student recieve nothing but the best.
+                         </p>
+                         <h4>3. Practical Learning</h4>
+                         <p>We believe in the power of hand-on experiences. Our courses are design to teach through doing, enabling our student to gain practical. real-word skills in Web-developement,
+                          Mobile app creation, Blender animation, robotics and more. We aim to empower learner to confidently apply their knowledge in prefessional environments.
+                         </p>
+                         <h4>4. client-Centric Approach</h4>
+                         <p>Every client is unique, and so are their needs. That's why we prioritize understand your vision and goals before offering tailored IT solutions. From business website development to home 
+                          electrical, we work closely to ensure every project is a reflection of our requirements and aspirations.
+                         </p>
+                         <h4>5. Accessibility</h4>
+                         <p>Education and innovation should be within everyone's reach. WE offer flexible tuition packages that accommodate various schedules and budgets, making it easier for aspiring
+                          learners to access high-quality training. For our IT and maintenance services, we provide transparent pricing and adatable solutions to fit divers needs.
+                         </p>
+                         <h4>6. Reliability</h4>
+                         <p>You can count on <strong>JECHOTECH-SOLUTION</strong>. Be it delivering a complex web applications ensuring your home electrical systems functions seamlessly,
+                        reliability is at the heart of our services. Our client and students trust us because we consistently deliver on our promises with integrity and profesionalism.</p>
+                        <h4>7. Collaboration</h4>
+                        <p>We believe great things happened when people work together. Our team collaborate internally to blend ideas and expertise, and we extend this spirit of Collaboration to our client and students. Whether youe re hiring us for a service 
+                          or join our courses. We view you as a partner for our in achieving success.
+                        </p>
+                        <h4>8. Adaptability</h4>
+                        <p>Technology evolves rapidly, and so do we. Our team stay updated on the latest trends, tools, and techniques to ensure we offer the most relevant solutions and learning
+                          experiences. From integrating emerging technologies into our services to updating our courses content, adaptability is key to staying ahead.
+                        </p>
+                        <h4>9. Empowerment</h4>
+                        <p>Our mission is to empower individuals and businesses. For our students, this means equiping them with the knowledge and skills in today's competitive tech landscape.
+                          For our client's it's about delivering solutions to help them achieve their goals and unlock new opportunities.
+                        </p>
+                        <h4>10. Substainability</h4>
+                        <p>We are committed to creating a substainable solution that benefit not just our client's and student, but also the environment and society. whether through energy-efficient
+                          maintenance services or creating tech solutions that optimize resources,we aim to contribute positively to the world around us
+                        </p>
+
+                        <p>At <strong>JECHOTECH-SOLUTION</strong>, our core value defines how we operate and interact with our clients, student and community. This value ensure we remain committed to our mission of delivering
+                        excellence in IT solutions, education and maintenance services. while fosting trust and long-lasting relationships. Together, let's creat , innovate and grow!</p>
+
+                   </div>
+                   <button class="btn btn-light"><a href="/contact_page/contact-Page.html">Contact Us</a></button>
+
+                </div>
+
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </section>
+    <!-- our skills section -->
+    <section class="aboutSection-five">
+      <div class="introWrapper">
+        <div class="row">
+          <div class="col-8 col-md-6">
+            <div class="p-5 text-black text-content">
+              <div class="skills-text">
+                <h2>Our skills</h2>
+                <p>We combine technical expertise with hands-on experience to deliver top-quality services.
+                  Each skill is backed by real results and continuous improvement.
+                </p>
+              </div>
+              <div class="skills-percentage">
+                <!-- scrollable content -->
+                <div class="scrollable-percentage">
+                <!-- progress inpercentage -->
+                 <p>Graphic designing</p>
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 77%">77%</div>
+              </div>
+
+              <p class="percentage-paragraph">fullStack Development</p>
+              <div class="progress percentage-wrapp" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 90%">90%</div>
+              </div>
+
+              <p class="percentage-paragraph">Arduino Robotic Programing</p>
+              <div class="progress percentage-wrapp" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 85%">85%</div>
+              </div>
+
+              <p class="percentage-paragraph">Blender Animation</p>
+              <div class="progress percentage-wrapp" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 50%">50%</div>
+              </div>
+
+              <p class="percentage-paragraph">MobileApp Development</p>
+              <div class="progress percentage-wrapp" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 70%">70%</div>
+              </div>
+
+              <p class="percentage-paragraph">Electronic Maintainance</p>
+              <div class="progress percentage-wrapp" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 25%">25%</div>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8 col-md-6 introCard">
+            <div class="p-2">
+              <div class="row">
+                <div class="aboutUs-skills">
+                  <div class="stateOne">
+                    <div class="subStatOne">
+                      <h2>20+</h2>
+                      <p>Year Of Experience</p>
+                    </div>
+
+                    <div class="subStatTwo">
+                      <h2>1,000+</h2>
+                      <p>Project Done</p>
+                    </div>
+                  </div>
+
+                  <div class="statetwo">
+                    <div class="subStatOne">
+                      <h2>300+</h2>
+                      <p>Year Of Experience</p>
+                    </div>
+
+                    <div class="subStatTwo">
+                      <h2>64+</h2>
+                      <p>Project Done</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </section>
+
+    <section class="aboutSection-six">
+      <div class="subsection">
+        <h2>Hire Us Now</h2>
+        <h4>We Are Always Ready For You, Your work is Our Top Priority</h4>
+        <button btn btn-light><a href="/service_page/services.html">Get Started</a></button>
+      </div>
+    </section>
+
+     <footer class="footer-section">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 p-5 d-md-flex d-sm-block">
+            <div class="col-sm-12 col-md-6 d-block subFooter-one">
+            <div class="my-logo">
+              <img src="/Logo_Folder/jechotech_logo.png" alt="My logo">
+              <p>Jechotech-solution</p>
+            </div>
+            <div class="About-us">
+              <h4><a href="/about_us/aboutUs.html">About Us</a></h4>
+              <p>JECHOTECH-SOLUTION is a dynamic team of tech enthusiasts and engineers.</p>
+            </div>
+            <div class="contact-us">
+              <h4><a href="/contact_page/contact-Page.html">Contact Us</a></h4>
+              <div class="contacts">
+                <small><i class="fa-solid fa-phone-volume"></i></small>
+                <p><a href="tel:+2348100688446">Call Us</a></p>
+              </div>
+              <div class="gmail">
+                <small><i class="fa-solid fa-envelope-open-text"></i></small>
+                <p><a href="mailto:aowojechomathias@gmail.com">aowojechomathias@gmail.com</a></p>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 d-block subFooter-two">
+              <h4>Information</h4>
+              <ul>
+                <li><a href="/service_page/services.html">Services</a></li>
+                <li><a href="#">More Search</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#">Events</a></li>
+              </ul>
+            </div>
+            <!-- display on mobile-wiew but hidding on large screen -->
+
+            <div class="col-sm-12 col-md-6 d-block subFooter-three">
+              <h4>Helpful Links</h4>
+              <ul>
+                <li><a href="/service_page/services.html">Services</a></li>
+                <li><a href="/contact_page/contact-Page.html">Supports</a></li>
+                <li><a href="/terms_and_conditions/terms&condition.html">Terms & Condition</a></li>
+                <li><a href="/private_policy/Privacy-policy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <form action="https://formsubmit.co/aowojechomathias@gmail.com" method="POST">
+            <div class="col col-sm-12 col-md-6 d-block subFooter-four">
+              <h4>Subscribe More Info</h4>
+              <div class="inputWrapper d-flex">
+                <small><i class="fa-solid fa-envelope-open-text"></i></small>
+                <input type="gmail" placeholder="Enter your Email">
+              </div>
+              <button type="submit" class="btn"><a href="#">Subscribe</a></button>
+            </div>
+            </form>
+
+          </div>
+
+          </div>
+          <!-- section one -->
+          
+          
+        </div><hr>
+
+        <div class="socialMeedia-Wrapper">
+          <div class="social">
+          <a href="#"><small><i class="fab fa-whatsapp"></i></small></a>
+          <a href="#"><small><i class="fab fa-facebook-f"></i></small></a>
+          <a href="#"><small><i class="fab fa-x-twitter"></i></small></a>
+          <a href="#"><small><i class="fab fa-instagram"></i></small></a>
+          </div>
+          <div class="powerandreserve">
+          <div class="Powerby">
+            <p>Powerby: mjecho</p>
+          </div>
+          <div class="copywrite-wrapper">
+            <p>2024</p>
+            <a href="#"><small><i class="fa-regular fa-copyright"></i></small></a>
+            <p>All Right reserved</p>
+          </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="/acount/reg-form.js"></script>
+    <script src="/cracked_cdns/cracked_min.js"></script>
+    <script src="/cracked_cdns/crackedPopper.js"></script>
+    <script src="/cracked_cdns/crackedJqueryCdn.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+    
+</body>
+</html>

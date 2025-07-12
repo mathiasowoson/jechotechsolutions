@@ -1,0 +1,855 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    background-color: #e8e5e5 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* logo */
+.navbar-brand img, .modal-header a {
+  width: 150px;
+  height: 100px;
+}
+/* Custom styles for the navbar */
+.navbar-custom {
+  background-color:  transparent !important; /* Dark background */
+  position: fixed !important;
+  z-index: 1000 !important;
+  width: 100% !important;
+  transition: background-color 0.3s ease;
+  
+}
+
+.navbar-custom .navbar-brand, .navbar-custom .nav-link {
+  color: #fff; /* White text */
+}
+.navbar-custom .nav-link:hover {
+  color: #f0ad4e; /* Highlight color on hover */
+}
+/* Adjust offcanvas background */
+.offcanvas-custom {
+  background-color: #343a40 !important; /* Match navbar background */
+  color: #fff;
+}
+.offanvsBody{
+  background-color: black !important;
+}
+#offcanvasNavbarLabel{
+  color: #f5d7ac !important;
+}
+.profile, .Home{
+  color: #f6af4c !important;
+}
+.Button{
+  color: #f5d7ac !important;
+}
+
+
+* Hero section container */
+.hero-section {
+  width: 100%;
+  max-width: 1200px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the carousel horizontally */
+  height: 500px; /* Adjust the height as needed */
+  position: relative;
+  overflow: hidden; /* Ensure the carousel is clean with no border or overflow */
+}
+
+/* Customize the carousel */
+#heroCarousel {
+  height: 100%;
+}
+
+#heroCarousel .carousel-item {
+  height: 100vh;
+}
+
+
+/* Optional: Custom styling for carousel captions */
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+/* animation customization */
+.card-opening {
+  overflow: hidden;
+  height:  100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/SlidingHero_Section/Robotic\ slidding.png');
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.card-opening img{
+  object-fit: cover; /* Ensure images cover the entire slide area */
+  height: 100%;
+  width: 100%;
+  opacity:1;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -50%) scale(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  border: none; /* Remove border around images */
+}
+/* Animation when the card opens */
+.card-opening.open img {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.BigSize-display{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-items: left !important;
+  position: relative;
+  top: 35%;
+ left: 10% !important;
+ width: 450px !important;
+}
+.smallSize-display{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: left !important;
+  justify-items: left;
+}
+.BigSize-display p,.smallSize-display p, .smallSize-display h5{
+font-family: Arial, Helvetica, sans-serif;
+text-align: left !important;
+}
+.BigSize-display .trasparent-Button, .smallSize-display .trasparent-Button{
+  background-color: transparent !important;
+  color: white !important;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.BigSize-display .colorBtn, .smallSize-display .colorBtn{
+  color: white !important;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.BigSize-display 
+.trasparent-Button:hover, 
+.smallSize-display 
+.trasparent-Button:hover,
+.BigSize-display 
+.colorBtn:hover, .smallSize-display 
+.colorBtn:hover{
+  background-color: #2c2309 !important;
+}
+.BigSize-display small,.smallSize-display small{
+  color: rgb(245, 166, 39);
+}
+
+/* body content */
+
+.achieveCard{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 2;
+}
+.fontLogo{
+  display: flex;
+  gap: 10px;
+}
+
+.sponsors-logos img {
+  width: 150px;
+  height: 100px;
+}
+
+.content-wrapper{
+  background-color: black;
+}
+.introCard a{
+text-decoration: none !important;
+}
+.intro-Text{
+  background-image: url('/MyMyWeb_grahics/Whittspace.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.introWrapper{
+  background-color: #fff; 
+}
+.readMore{
+  background-color: hsl(45, 81%, 45%) !important;
+  border: none !important;
+}
+.text-content a{
+  color: rgb(33, 30, 30) !important;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.boxOne, .boxTwo, .boxThree, .boxFour{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  box-shadow: 16px 0px 28px 0 rgb(0,0,0,0.1);
+}
+.boxOne{
+  background-image: url('/project_photos/jechoAI_arduino_poiting.png');
+}
+ .boxTwo{
+  background-image: url('/MyMyWeb_grahics/BlenderAnimation.jpg');
+ }
+  .boxThree{
+    background-image: url('/MyMyWeb_grahics/GraphicDesign.jpg');
+  }
+   .boxFour{
+    background-image: url('/project_photos/jechoAI_withlogo.png');
+   }
+   .boxOne h4,.boxTwo h4,.boxThree h4,.boxFour h4{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+   }
+
+   /* third sections */
+   .card-body a{
+    text-decoration: none !important;
+    color: white !important;
+   }
+   .featureTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .third-section{
+    background-color: black;
+   }
+   .featureTitle h4{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .featureTitle p{
+    color: rgb(147, 144, 144);
+    font-size: 1.3em;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .smallboxes{
+    display: flex;
+    gap: 2px;
+   }
+   .smallboxtext{
+    padding: 0.2em 1em;
+    background-color: white;
+    color: black;
+    border-radius: 0.2em;
+   }
+   .smallboxes a{
+    text-decoration: none;
+    font-size: 0.6em;
+   }
+   .featureTitle{
+    padding-top: 0.8em;
+    padding-bottom: 0.6em;
+   }
+   .smallbox-one{
+    background-color: rgb(245, 194, 12);
+    padding: 0.2em 1em;
+    border-radius: 0.2em;
+   }
+ 
+   /* fouth section  */
+   .coreValue-wrapper{
+    background-color: white;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+   }
+   .ourMoto{
+    padding: 0.4em;
+    background-color: rgb(219, 178, 45);
+   }
+   .font{
+    text-align: center;
+    display: flex;
+    gap: 0.4em;
+    padding-top: 15px !important;
+   }
+   .font p{
+    font-weight: bold;
+    color: white;
+   }
+   
+   .font .logo i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* background-color: white; */
+   }
+   
+   .coreValue-text{
+    background-color: rgb(214, 212, 212);
+   }
+ 
+  .coreValue-image{
+    background-image: url('/SubPhotos/TrainingTean.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* fifth section */
+  .betterLinks a{
+    text-decoration: none !important;
+    color: black !important;
+  }
+
+  .betterCompany-sect{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-row .logo{
+    text-align: center;
+    background-color: yellow;
+    border-radius: 50%;
+  }
+  .card-body{
+    text-align: center;
+  }
+  .betterCard .card-title{
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+  .card-row button{
+    border-bottom: 1px solid yellow;
+    box-shadow: 0px 0px 28px 0px #7a7878;
+  }
+  .font-logo{
+    display: flex;
+    gap: 10px;
+  }
+  .font-logo h3{
+    color: rgb(245, 143, 10);
+  }
+  .font-logo h2{
+    color: rgb(245, 175, 84);
+  }
+  .workStatistics, .achieveWrapper{
+    width: 100% !important;
+    background-color: rgb(31, 31, 26);
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-image: url('/SlidingHero_Section/Comarebg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: center;
+    margin-top: 0.8em;
+  }
+  .achieveWrapper .logo-heading {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0.1 0 #000;
+  text-align: center;
+  padding: 0.6em;
+  height: 50px;
+  color: #af8c2c;
+  background-color: #fff;
+  margin-left: 1em;
+  margin-top: -200px;
+  position: absolute !important;
+}
+  .StatCard{
+    display: flex;
+    justify-content: center;
+    gap: 6em;
+    position: relative;
+  }
+  .StatCard h3{
+    font-weight: bold;
+    font-size: 1.5em !important;
+  }
+  .StatCard p{
+    font-size: 0.8em;
+  }
+  .StatCard .logo{
+    font-size: 1.5em;
+  }
+
+/* footer-section */
+.footer-section{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+.subFooter-one a,.subFooter-three h4, .subFooter-four h4,.subFooter-two h4{
+  color: rgb(245, 143, 10);
+  font-weight: bold;
+  font-size: 1em;
+}
+.contacts a, .gmail a{
+  color: white !important;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.subFooter-one p{
+  color: white;
+}
+.subFooter-one .About-us a,.subFooter-one .contact-us a{
+  text-decoration: none;
+}
+.subFooter-one .contacts, .subFooter-one .gmail{
+  display: flex;
+  gap: 0.5em;
+}
+.subFooter-two ul a,.About-us p a, .subFooter-three a{
+color: white;
+text-decoration: none;
+font-size: 0.8em;
+}
+.social{
+  display: flex;
+  gap: 1em;
+}
+.social a{
+  text-decoration: none !important;
+  color: rgb(230, 131, 10) !important;
+
+}
+.copywrite-wrapper{
+  display: flex;
+  letter-spacing: 0.1em;
+  gap: 0.2em;
+  font-size: 0.6em;
+  font-weight: bolder;
+}
+.Powerby{
+  font-size: 0.7em !important;
+}
+
+.subFooter-four small{
+  font-size: 0.9em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subFooter-four h4{
+  color: white;
+}
+.subFooter-four button{
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(231, 164, 50);
+  border: none;
+}
+.subFooter-four a{
+  text-decoration: none !important;
+  color: white !important;
+}
+.subFooter-four button:hover{
+  background-color: #8c6c40;
+  color: #ddd6d6;
+}
+.inputWrapper{
+  gap: 0.5rem;
+  padding: 0.5em;
+  width: 250px;
+  border-radius: 0.6rem;
+  margin-bottom: 0.6em;
+  background-color: white;
+}
+.inputWrapper input{
+  border: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #938d8d;
+}
+.footer-section hr{
+  border: 1px solid white;
+}
+.my-logo img{
+    width: 150px;
+    height: 100px;
+   }
+
+/* modal signup stylling */
+
+.modal.fade .modal-dialog{
+  transform: translate(-50%, -50%) scale(0.2) !important;
+  /* initial scale */
+  opacity: 0 !important;
+  transition: transform 0.5s ease, opacity 0.5s !important;
+}
+.modal.show .modal-dialog{
+  transform:  scale(1) !important;
+  opacity: 1 !important;
+  position: relative !important;
+}
+
+/* signup bady styling */
+.signupSub-continer{
+  box-shadow: 0px 0px 28px 0.5em #0000;
+  background-color: white;
+  border-radius: 1em;
+}
+.sigUp-container,.headerWrapper{
+  background: linear-gradient(to right,rgb(37, 89, 88),rgb(3, 38, 37),rgb(3, 38, 37));
+  overflow-x: hidden;
+}
+.headerWrapper a{
+  color: #f6af4c;
+}
+.signUp-text{
+  background-image: url('/CardPhoto_folder/Dacklightgreen.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+}
+.signUp-text .signIn-wrapper{
+  color: white;
+  width: 300px;
+}
+.signIn-wrapper .signup-txtWrapper{
+  width: 150px;
+  font-weight: bold;
+}
+.signUp-text .signIn-wrapper h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.login-container{
+  margin: 2em;
+  width: 70% !important;
+}
+#loginForm .formControl,#signupForm .formControl{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(37, 89, 88);
+  font-weight: 500;
+  font-size: 0.9em;
+}
+form .checkbox-wrapper{
+  display: flex;
+  gap: 0.5em;
+}
+.checkbox-wrapper p{
+  font-size: 0.7em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  color: rgb(88, 85, 85);
+}
+form p{
+  color:  rgb(88, 85, 85);
+}
+form .actionButton{
+  border-radius: 0.6em;
+  color: white;
+  background-color: black;
+  border: none;
+  border-bottom: 2px solid rgb(23, 106, 16);
+  font-weight: 500;
+  font-size: 0.6em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+form .actionButton:active{
+  background-color: rgb(65, 62, 62);
+}
+form .actionButton-white:active{
+  background-color: rgb(65, 62, 62);
+  color: white;
+}
+form .actionButton-white{
+  border-radius: 0.6em;
+  border: 1px solid rgb(167, 162, 162);
+  font-weight: 500;
+  font-size: 0.6em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  box-shadow: 5px 5px 14px 5px rgb(0,0,0,0.1);
+}
+.error-message{
+  color: red;
+  display: none;
+}
+.loader{
+  display: none;
+}
+.loader .jecho-pin{
+  border-top: 3px solid rgb(217, 133, 23);
+  font-size: 0.6em !important;
+  padding: 5px !important;
+}
+/* more controls fom about-us styling */
+.scrollable-container h4{
+  font-weight: bold;
+  font-size: 1em;
+}
+.scrollable-container .abouttext-title{
+  font-size: 1.1em;
+  color: #959899 !important;
+}
+.about-front{
+  font-size: 1.4em;
+  color: #49494a;
+}
+ strong{
+  color: #49494a;
+}
+.tuition-packagestext{
+  width: 85% !important;
+  text-align: center;
+}
+.aboutfade-one{
+  color: rgb(79, 78, 78);
+}
+.aboutfadetwo{
+  color: rgb(151, 149, 149);
+}
+
+/* medial queries */
+@media(max-width:575.98px){
+  html, body{
+    background-color: #fff !important;
+  }
+  .text-content, .intro-Text, .introWrapper,.introCard,.about-text{
+    width: 100% !important;
+  }
+  .text-content p{
+    font-size: 0.7em !important;
+  }
+  .card-opening img {
+    width: 200% !important;
+  }
+  .introWrapper .intro-Text{
+    margin-left: -4em !important;
+  }
+  .introWrapper .introCard{
+    margin-left: -2.5em !important;
+  }
+  
+  .smallSize-display h5{
+    font-size: 1.2em;
+  }
+  .smallSize-display p{
+    font-size: 0.85em;
+  }
+  .font-logo, .sponsors-logos img {
+    padding: 0.6em !important;
+    /* margin-right: 4.5em !important; */
+  }
+  .sponsors-logos img{
+    margin-left: -3.5em !important;
+  }
+  .boxOne, .boxTwo, .boxThree, .boxFour{
+    width: 90% !important;
+    border-radius: 0.6em !important;
+    border-right: 2px solid rgb(241, 123, 123) !important;
+  }
+  .boxOne h4, .boxTwo h4, .boxThree h4, .boxFour h4{
+    font-size: 0.9em !important;
+  }
+  .tuition-packagestext p{
+    font-size: 0.8em !important;
+  }
+  .slideCard{
+    width: 112% !important;
+    /* position: absolute !important; */
+    margin-left: -3.5em !important;
+  }
+  
+  .carousel-inner{
+    position: relative !important;
+  }
+  .featureTitle h4{
+    font-size: 0.7em !important;
+  }
+  .cardboxes, .cardImage{
+      display: flex !important; 
+      justify-content: center !important;
+      align-items: center !important;
+    }
+    .cardboxes{
+      position: relative;
+      left: 6.5em;
+      padding-top: 2em;
+      margin-bottom: 1em;
+    }
+    .card-body P, .card-body h4{
+      color: #000;
+    }
+    .betterCompany-sect p {
+      width: 420px !important;
+      padding: 2em !important;
+    }
+    .coreValue-text{
+      width: 100% !important;
+    }
+    .coreValue-image{
+      width: 100% !important;
+      height: 550px;
+      margin-bottom: 0.6em;
+    }
+    .betterCompany-sect h4{
+      font-size: 0.8em !important;
+      font-weight: bolder !important;
+    }
+    .betterCompany-sect p{
+      font-size: 0.8em !important;
+      width: 100% !important;
+    }
+    .statContent .font-logo{
+      width: 50% !important;
+      margin-left: -2em !important;
+    }
+    
+    .card-row{
+      margin-left: 12px !important;
+    }
+  .betterCard{
+      margin-top: 0.5em !important;
+    }
+  .StatCard{
+      justify-content: space-between !important;
+      gap: 0;
+    }
+    .achieveWrapper .logo-heading{
+      margin-left: 1em;
+      margin-top: -430px !important;
+      position: absolute !important;
+    }
+  .socialMeedia-Wrapper{
+    display: flex;
+    flex-direction: center;
+    gap: 10em;
+    margin-left: 3em;
+    position: relative !important;
+  }
+  .powerandreserve{
+    margin-left: -3em !important;
+  }
+  .About-us p{
+    font-size: 0.6em !important;
+    width: 30% !important;
+  }
+
+  .footer-section{
+    width: 1000px !important;
+  }
+  
+  .signupSub-continer{
+    width: 800px !important;
+  }
+  .signUp-text, .signUp-input{
+    height: 100vh !important;
+  }
+  .signUp-text{
+    display: none;
+  }
+  .login-container{
+    width: 70%;
+  }
+  .signUp-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95% !important;
+  }
+  /* recent adjustment */
+  .sigUp-container, .signupSub-continer{
+    width: 103% !important;
+  }
+  .socialMeedia-Wrapper .copywrite-wrapper{
+   margin-left: -5em !important
+}
+}
+
+@media(min-width:576px){
+  .StatCard{
+    width: 900.5px;
+  }
+  .card-row{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 1000px !important;
+     position: relative;
+     left: 11.8em;
+     margin-bottom: 4em;
+    }
+  .bigboxes{
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 1000px !important;
+      position: relative !important;
+      left: 11.8em !important;
+     }
+     .cardboxes{
+      padding-top: 2em;
+      padding-bottom: 1em;
+     }
+  .signupSub-continer{
+    width: 80% !important;
+  }
+  .sigUp-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .signUp-text, .signUp-input{
+    height: 500px !important;
+  }
+  .socialMeedia-Wrapper{
+    display: flex;
+    flex-direction: center;
+    gap: 10em;
+    margin-left: 30em;
+  }
+  .BigSize-display .courseBoxes{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    bottom: 0%;
+    left: 90%;
+    width: 600px;
+    height: auto !important;
+  }
+  
+}
+

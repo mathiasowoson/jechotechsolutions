@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tesing</title>
+    <!-- customize css -->
+     <link rel="stylesheet" href="/home_page/teststyl.css">
+     <link rel="stylesheet" href="/department_page/preview.css">
+     <!-- cracked boostrap -->
+      <link rel="stylesheet" href="/cracked_cdns/cracked_css.css">
+      <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+       crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="hero-section">
+      <!-- Navigation bar -->
+      <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="/Logo_Folder/jechotech_logo.png" alt="logo">
+          </a>
+          <!-- Offcanvas Toggle Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Offcanvas Navbar Content for small screens -->
+          <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close text-reset Button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body offanvsBody">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <!-- sign-up page modal button here-->
+                     <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#fullSscreenModal">Sign-Up</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/service_page/services.html">Our Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about_us/aboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact_page/contact-Page.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/terms_and_conditions/terms&condition.html">Terms & Conditions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/private_policy/Privacy-policy.html">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/faq_page/FAQ.html">FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Navbar Content for large screens -->
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link Home" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/service_page/services.html">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about_us/aboutUs.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact_page/contact-Page.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- modal body content -->
+      <div class="modal fade" id="fullSscreenModal" tabindex="-1" aria-labelledby="fullScreenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content headerWrapper">
+                <div class="modal-header">
+                    <a href="/index.html" class="navbar-brand" id="fullScreenModalLabel">
+                      <img src="/Logo_Folder/jechotech_logo.png" alt="">
+                    </a>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body sigUp-container">
+              <!-- modal body contents -->
+                <div class="row signupSub-continer">
+                  <div class="col-8 col-md-6 signUp-text">
+                    <div class="signIn-wrapper">
+                      <h4>Create Account With JECHOTECH-SOLUTION</h4>
+                      <div class="signup-txtWrapper">
+                        <p>Share your work and get Project!</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-8 col-md-6 signUp-input">
+                   <div class="login-container">
+                    <h3 class="text-center">Sign Up</h3>
+                    <form id="signupForm" onsubmit="registerSignUp(event)">
+                      <div class="mb-3">
+                        <input type="text" id="FirstName" class="formControl" placeholder="First name">
+                      </div>
+                      <div class="mb-3">
+                        <input type="text" id="lastName" class="formControl" placeholder="last name">
+                      </div>
+                      <div class="mb-3">
+                        <input type="email" id="emailAddress" class="formControl" placeholder="Email Address">
+                      </div>
+                      <div class="mb-3">
+                        <input type="text" id="password" class="formControl" placeholder="password">
+                      </div>
+                      <div class="checkbox-wrapper">
+                        <input type="checkbox" class="checkBox-input" id="checkboxInput">
+                        <p>Accept terms & Conditions</p>
+                      </div>
+                      <div class="mb-3">
+                        <!-- modal button for second modal within for login for page -->
+                      <button type="button" class="actionButton w-100" id="joinUs" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Already Have Account?</button>
+                      </div>
+                      <p>_______or _________</p>
+                     
+                        <div class="mt-3">
+                          <button type="button" class="actionButton-white w-100" id="joinUs">Sign up with google</button>
+                          </div>
+                          <div>
+                            <div class="mt-1">
+                            <button type="button" class="actionButton w-100" id="joinUs">Sign up with Apple</button>
+                            </div>
+                            </div>
+                    </form>
+                   </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- second modal-body content for login page -->
+     <div class="modal fade" id="exampleModalToggle2" tabindex="-1" aria-labelledby="exampleModalToggleLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content headerWrapper">
+              <div class="modal-header">
+                  <a href="/index.html" class="navbar-brand" id="fullScreenModalLabel">
+                    <img src="/Logo_Folder/jechotech_logo.png" alt="">
+                  </a>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body sigUp-container">
+            <!--second modal body contents -->
+              <div class="row signupSub-continer">
+                <div class="col-8 col-md-6 signUp-text">
+                  <div class="signIn-wrapper">
+                    <h4>Create Account With JECHOTECH-SOLUTION</h4>
+                    <div class="signup-txtWrapper">
+                      <p>Share your work and get Project!</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-8 col-md-6 signUp-input">
+                 <div class="login-container">
+                  <h3 class="text-center">Login In</h3>
+                  <form id="loginForm" onsubmit="validateLogin(event)">
+                    <div class="mb-3">
+                      <input type="text" id="username" class="formControl" placeholder="username" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <input type="text" id="password" class="formControl" placeholder="password" required>
+                    </div>
+                    <div class="checkbox-wrapper">
+                      <input type="checkbox" class="checkBox-input" id="checkboxInput">
+                      <p>Accept terms & Conditions</p>
+                    </div>
+                    <div class="mb-3">
+                      <!-- modal button for second modal within for login for page -->
+                    <button type="submit" class="actionButton w-100" id="joinUs">Submit</button>
+                    </div>
+                     <!-- loader -->
+                     <div class="loader text-center my-3">
+                      <div class="spinner-border text-primary jecho-pin" role="status">jecho
+                      </div>
+                    </div>
+                    <p>_______ or ________</p>
+                    <!-- error message display -->
+                     <div class="error-message" id="errorMessage">Incorrect username or password. Please try again.</div>
+                      <div class="mt-3">
+                        <button type="button" class="actionButton-white w-100" id="joinUs">Sign up with google</button>
+                        </div>
+                        <div>
+                          <div class="mt-1">
+                          <button type="button" class="actionButton w-100" id="joinUs">Sign up with Apple</button>
+                          </div>
+                          </div>
+                  </form>
+                 </div>
+                </div>
+              </div>
+          </div>
+          </div>
+      </div>
+   </div>
+
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- slide 1 -->
+            <div class="carousel-item active">
+              <div class="card-opening">
+              <img src="/SlidingHero_Section/GraphicDesign sliding.png" class="d-block w-100" alt="Slide 1">
+              <!-- display for large screen -->
+              <div class="carousel-caption d-none d-md-block BigSize-display">
+                <h5><small>🤖Our intelligent</small> Technology</h5>
+                <h5> Solution Services</h5>
+                <p>We blend innovation with expertise to deliver smart tech services that work seamlessly.
+                  From automation to advanced systems, we make technology simple and effective.
+                </p>
+                   <div class="heroButton-wrapper">
+                    <a class="btn btn-warning colorBtn" href="/service_page/services.html">Our Services</a>
+                    <a class="btn btn-light trasparent-Button" href="/department_page/preview_page.html">Watch Video</a>
+                   </div>
+              </div>
+              <!-- diplay for small screen -->
+              <div class="carousel-caption d-block d-md-none smallSize-display">
+                <h5><small>🤖Our intelligent</small></h5>
+                <h5>Technology Solution Services</h5>
+                <p>We blend innovation with expertise to deliver smart tech services that work seamlessly.
+                  From automation to advanced systems, we make technology simple and effective.
+                </p>
+                   <div class="heroButton-wrapper">
+                    <a class="btn btn-warning colorBtn" href="/service_page/services.html">Our Services</a>
+                    <a class="btn btn-light trasparent-Button" href="/department_page/preview_page.html">Watch Video</a>
+                   </div>
+              </div>
+              </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="carousel-item">
+              <div class="card-opening">
+              <img src="/SlidingHero_Section/Robotic slidding.png" class="d-block w-100" alt="Slide 2">
+              <!-- display for large screen -->
+              <div class="carousel-caption d-none d-md-block BigSize-display">
+                <h5>Best <small>IT Solution</small></h5>
+                <h5>Company</h5>
+                <p>At JECHOTECH_SOLUTION, we provide top-notch IT services tailored to your unique goals.
+                   Our solutions are smart, scalable, and built to empower your business.
+                  </p>
+                  <div class="heroButton-wrapper">
+                   <a class="btn btn-warning colorBtn" href="/department_page/preview_page.html">Get Start</a>
+                   <a class="btn btn-light trasparent-Button" href="/service_page/services.html">Our Services</a>
+              </div>
+              </div>
+              </div>
+               <!-- diplay for small screen -->
+               <div class="carousel-caption d-block d-md-none smallSize-display">
+                <h5>Best <small>IT Solution</small></h5>
+                <h5>Company</h5>
+                <p>At JECHOTECH_SOLUTION, we provide top-notch IT services tailored to your unique goals.
+                   Our solutions are smart, scalable, and built to empower your business.
+                  </p>
+                  <div class="heroButton-wrapper">
+                   <a class="btn btn-warning colorBtn" href="/department_page/preview_page.html">Get Start</a>
+                   <a class="btn btn-light trasparent-Button" href="/service_page/services.html">Our Services</a>
+              </div>
+              </div>
+            </div>
+            <!-- slide 3 -->
+            <div class="carousel-item">
+              <div class="card-opening">
+              <img src="/SlidingHero_Section/MobileApp slidding.png" class="d-block w-100" alt="Slide 3">
+              <!-- display for large screen -->
+              <div class="carousel-caption d-none d-md-block BigSize-display">
+                <h5><small>Experience</small> For</h5>
+                <h5>Every Kind Of MobileApp Developement.</h5>
+                <p>Whether it’s Android, iOS, or cross-platform, we create smooth, user-friendly mobile apps.
+                   Our team turns your ideas into high-performing mobile experiences.
+                  </p>
+                  <div class="heroButton-wrapper">
+                   <a class="btn btn-warning colorBtn" href="/department_page/preview_page.html">Get Start</a>
+                   <a class="btn btn-light trasparent-Button" href="/service_page/services.html">Our Services</a>
+                   <div class="courseBoxes">
+                    <div class="row my-1">
+                    <div class="col-2 m-1 p-1 bg-primary">1</div>
+                    <div class="col-2 m-1 p-1 bg-primary">2</div>
+                    <div class="col-2 m-1 p-1 bg-primary">3</div>
+                    <div class="col-2 m-1 p-1 bg-primary">4</div>
+                    <div class="col-2 m-1 p-1 bg-primary">5</div>
+                    </div>
+                   </div>
+              </div>
+              </div>
+               <!-- diplay for small screen -->
+               <div class="carousel-caption d-block d-md-none smallSize-display">
+                <h5><small>Experience</small> For</h5>
+                <h5>Every Kind Of MobileApp Developement.</h5>
+                <p>Whether it’s Android, iOS, or cross-platform, we create smooth, user-friendly mobile apps.
+                   Our team turns your ideas into high-performing mobile experiences.
+                  </p>
+                  <div class="heroButton-wrapper">
+                   <a class="btn btn-warning colorBtn" href="/department_page/preview_page.html">Get Start</a>
+                   <a class="btn btn-light trasparent-Button" href="/service_page/services.html">Our Services</a>
+                   <div class="courseBoxes">
+                    <div class="row my-1">
+                    <div class="col-2 m-1 p-1 bg-primary">1</div>
+                    <div class="col-2 m-1 p-1 bg-primary">2</div>
+                    <div class="col-2 m-1 p-1 bg-primary">3</div>
+                    <div class="col-2 m-1 p-1 bg-primary">4</div>
+                    <div class="col-2 m-1 p-1 bg-primary">5</div>
+                    </div>
+                   </div>
+              </div>
+              </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card-opening">
+              <img src="/SlidingHero_Section/Animation slidding.png" class="d-block w-100" alt="Slide 3">
+              <!-- display for large screen -->
+              <div class="carousel-caption d-none d-md-block BigSize-display">
+                <h5><small>IT Solution with</small></h5>
+                <h5>Awesome Blender Animation</h5>
+                <p>We don’t just code — we animate your vision with 3D creativity using Blender tools.
+                   From design to delivery, we fuse IT skills with stunning animations.
+                  </p>
+                <div class="heroButton-wrapper">
+                  <a class="btn btn-warning colorBtn" href="/department_page/preview_page.html">Get Start</a>
+                  <a class="btn btn-light trasparent-Button" href="/service_page/services.html">Our Services</a>
+                </div>
+              </div>
+               <!-- diplay for small screen -->
+               <div class="carousel-caption d-block d-md-none smallSize-display">
+                <h5><small>IT Solution &</small></h5>
+                <h5>Awesome Blender Animation</h5>
+                <p>We don’t just code — we animate your vision with 3D creativity using Blender tools.
+                   From design to delivery, we fuse IT skills with stunning animations.
+                  </p>
+                <div class="heroButton-wrapper">
+                  <a class="btn btn-warning colorBtn" href="/department_page/preview_page.html">Get Start</a>
+                  <a class="btn btn-light trasparent-Button" href="/service_page/services.html">Our Services</a>
+                </div>
+              </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card-opening">
+              <img src="/SlidingHero_Section/web App Slidding.png" class="d-block w-100" alt="Slide 3">
+              <!-- display for large screen -->
+              <div class="carousel-caption d-none d-md-block BigSize-display">
+                <h5>Home <small>Electrical/Electonics</small></h5>
+                <h5>Maintenance.</h5>
+                <p>We are a full-service creative agency our team are well train to handle your home electrical/electronic fault with professional mind.</p>
+                  <div class="heroButton-wrapper">
+                    <a class="btn btn-warning colorBtn" href="/department_page/preview_page.html">Get Start</a>
+                    <a class="btn btn-light trasparent-Button" href="/service_page/services.html">Our Services</a>
+                  </div>
+              </div>
+               <!-- diplay for small screen -->
+               <div class="carousel-caption d-block d-md-none smallSize-display">
+                <h5>Home <small>Electrical/Electonics</small></h5>
+                <h5>Maintenance.</h5>
+                <p>WNeed reliable home tech support? We handle repairs, wiring, installations, and more.
+                   Our certified team ensures safety and efficiency in every job we do.
+                  </p>
+                  <div class="heroButton-wrapper">
+                    <a class="btn btn-warning colorBtn" href="/department_page/preview_page.html">Get Start</a>
+                    <a class="btn btn-light trasparent-Button" href="/service_page/services.html">Our Services</a>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="content-wrapper">
+        <div class="container-fluid achieveWrapper">
+          <div class="logo-heading">
+            <h4>SPONSORS</h4>
+          </div>
+          <div class="row achieveCard">
+            <div class="col-6 col-md-4 col-lg-2 p-2">
+              <div class="p-5  text-light fontLogo">
+                <span class="sponsors-logos">
+                  <img src="/Logo_Folder/C-tel_logo.png" alt="">
+                </span>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2 p-2">
+              <div class="p-5  text-light fontLogo">
+                <span class="sponsors-logos">
+                  <img src="/Logo_Folder/KwickBuy_log0.png" alt="">
+                </span>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2 p-2">
+              <div class="p-5 text-light fontLogo">
+                <span class="sponsors-logos">
+                  <img src="/Logo_Folder/nativity_dry_cleaning.png" alt="">
+                </span>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2 p-2">
+              <div class="p-5  text-light fontLogo">
+                <span class="sponsors-logos">
+                  <img src="/Logo_Folder/jechotech_logo.png" alt="">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- welcome page for introduction -->
+         <div class="introWrapper">
+          <div class="row">
+            <div class="col-8 col-md-6 intro-Text">
+              <div class="p-5 text-black text-content">
+                <p>Welcome to <strong class="about-front">JECHOTECH-SOLUTION</strong>, your one-top destination for all things IT and beyond! <br>
+                  At <strong>JECHOTECH-SOLUTION</strong>, we pride ourselves on delivering cutting-edge technology solution while empowering individuals and businesses to thrive in a 
+                  rapidly evolving digital world. Whether you are looking to enroll in our comprehensive courses or hire us for a tailored IT solution, we are here to
+                  bring your vision to life.</p>
+                  <h4 class="abouttext-title">Who We Are</h4>
+                  <p><strong>JECHOTECH-SOLUTION</strong> is a dynamic team of tech enthusiasts, engineers, and creative committed to solving every technological challenge with precision and innovation.
+                  Our mission is to deliver high-quality, practical, and futuristic solution while fosting learning opportunities  for <span class="aboutfade-one">individual passionate</span> <span class="aboutfadetwo">about technology.....</span></p>
+                   <button class="btn btn-secondary readMore"><a href="/about_us/aboutUs.html">Read more</a></button>
+              </div>
+            </div>
+
+            <div class="col-8 col-md-6 introCard">
+              <div class="p-2 text-light">
+                <div class="row">
+                  <div class="col-6 col-md-6 p-2">
+                    <a href="/department_page/new_department.html">
+                    <div class="p-5 bg-secondary text-light boxOne">
+                      <h4>Arduino & Introduction to Robotic Promgraming</h4>
+                    </div>
+                    </a>
+                  </div>
+
+                  <div class="col-6 col-md-6 p-2">
+                    <a href="/department_page/new_department.html">
+                    <div class="p-5 bg-secondary text-light boxTwo">
+                      <h4>Blender Animation(Cratch)</h4>
+                    </div>
+                    </a>
+                  </div>
+
+                  <div class="col-6 col-md-6 p-2">
+                    <a href="/department_page/new_department.html">
+                    <div class="p-5 bg-secondary text-light boxThree">
+                      <h4>Profeesional Graphic Design of All Kinds.</h4>
+                    </div>
+                    </a>
+                  </div>
+
+                  <div class="col-6 col-md-6 p-2">
+                    <a href="/department_page/new_department.html">
+                    <div class="p-5 bg-secondary text-light boxFour">
+                      <h4>MobileApp And Web-Developement</h4>
+                    </div>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+         </div>
+      </section>
+    
+      <section class="third-section">
+        <div class="thirdSection-content">
+          <div class="featureTitle">
+            <h4>Flexible Tuition Packages</h4>
+            <div class="tuition-packagestext">
+            <p>We make learning accessible with fixed-price tuition packages in all our department that are schedule montly and yearly. Choose a plan that fit your schedule
+              and start your journey toward mastering the skills that will shape your future. click below to check-out our departmental courses for enrollment.
+            </p>
+            </div>
+            <div class="smallboxes">
+              <a href="/service_page/services.html">
+              <div class="smallbox-one">Hire Us</div>
+              </a>
+              <a href="/Enrollment/registration.html">
+              <div  class="smallboxtext">Full-stack</div>
+              </a>
+              <a href="/Enrollment/registration.html">
+              <div  class="smallboxtext">Enrol Now</div>
+              </a>
+              <a href="/Enrollment/registration.html">
+              <div  class="smallboxtext">Elect/ELctronics-Maintenance</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- slidding card for small screen start -->
+        <div id="carouselExampleControlsNoTouching" class="carousel slide d-block d-md-none d-sm-block" data-bs-ride="true">
+          <div class="carousel-inner">
+           <a href="/department_page/preview_page.html">
+            <div class="carousel-item active slideCard">
+              <div class="col-8 col-md-4 cardboxes">
+                <div class="card cardImage" style="width: 18rem;">
+                  <img src="/project_photos/jecho_teaching_coding.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">Web-developement</h4>
+                    <p class="card-text">Our Departmental Package.</p>
+                    <button class="btn btn-secondary"><a href="/department_page/preview_page.html">Check Out</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </a>
+            
+           <a href="/department_page/preview_page.html">
+            <div class="carousel-item slideCard">
+              <div class="col-8 col-md-4 cardboxes">
+                <div class="card cardImage" style="width: 18rem;">
+                  <img src="/project_photos/jechoAI_withlogo.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">MobileApp-development</h4>
+                    <p class="card-text">Our Departmental Package.</p>
+                    <button class="btn btn-secondary"><a href="/department_page/preview_page.html">Check Out</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </a>
+            
+           <a href="/department_page/preview_page.html">
+            <div class="carousel-item">
+              <div class="col-8 col-md-4 cardboxes">
+                <div class="card cardImage" style="width: 18rem;">
+                  <img src="/project_photos/jechoAI_arduino_poiting.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">Arduino & Into Robotic programing</h4>
+                    <p class="card-text">Our Departmental Package.</p>
+                    <button class="btn btn-secondary"><a href="/department_page/preview_page.html">Check Out</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </a>
+            
+           <a href="/department_page/preview_page.html">
+            <div class="carousel-item">
+              <div class="col-8 col-md-4 cardboxes">
+                <div class="card cardImage" style="width: 18rem;">
+                  <img src="/CardPhoto_folder/BlenderAnimation.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">Blender Animation(Cratch)</h4>
+                    <p class="card-text">Our Departmental Package.</p>
+                    <button class="btn btn-secondary"><a href="/department_page/preview_page.html">Check Out</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </a>
+            
+           <a href="/department_page/preview_page.html">
+            <div class="carousel-item">
+              <div class="col-8 col-md-4 cardboxes"> 
+                <div class="card cardImage" style="width: 18rem;">
+                  <img src="/CardPhoto_folder/ManStandCityView.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">Profesional Graphic Design</h4>
+                    <p class="card-text">Our Departmental Package.</p>
+                    <button class="btn btn-secondary"><a href="/department_page/preview_page.html">Check Out</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </a>
+            
+           <a href="/department_page/preview_page.html">
+            <div class="carousel-item">
+              <div class="col-8 col-md-4 cardboxes">
+                <div class="card cardImage" style="width: 18rem;">
+                  <img src="/CardPhoto_folder/Handjointogether.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h4 class="card-title">Home Elelctrical/Electronic Maintenance</h4>
+                    <p class="card-text">Our Departmental Package.</p>
+                    <button class="btn btn-secondary"><a href="/department_page/preview_page.html">Check Out</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </a>
+            
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- slidding card end here -->
+         <!-- big screen display ----------->
+          <div class="row d-none d-md-flex d-sm-none bigboxes">
+            <div class="col-8 col-md-4 cardboxes">
+              <div class="card cardImage" style="width: 18rem;">
+                <img src="/CardPhoto_folder/LaptopIcons.png" class="card-img-top " alt="">
+                <div class="card-body">
+                  <h4 class="card-title">Web-Developement</h4>
+                    <p class="card-text">Our Departmental Package.</p>
+                    <button class="btn btn-secondary"><a href="/department_page/preview_page.html">Check Out</a></button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-8 col-md-4 cardboxes">
+              <div class="card cardImage" style="width: 18rem;">
+                <img src="/CardPhoto_folder/TeamAgreement.png" class="card-img-top" alt="">
+                <div class="card-body">
+                   <h4 class="card-title">Arduino & Intro To Robotic programing</h4>
+                    <p class="card-text">Our Departmental Package.</p>
+                    <button class="btn btn-secondary"><a href="/department_page/preview_page.html">Check Out</a></button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-8 col-md-4 cardboxes">
+              <div class="card cardImage" style="width: 18rem;">
+                <img src="/CardPhoto_folder/ReflectWhatsap.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h4 class="card-title">MobileApp Developement</h4>
+                    <p class="card-text">Our Departmental Package.</p>
+                    <button class="btn btn-secondary"><a href="/department_page/preview_page.html">Check Out</a></button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-8 col-md-4 cardboxes">
+              <div class="card cardImage" style="width: 18rem;">
+                <img src="/CardPhoto_folder/TeamConnect.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h4 class="card-title">Cyber Security/ Networking</h4>
+                  <p class="card-text">Our Departmental Package.</p>
+                  <button class="btn btn-secondary"><a href="/department_page/preview_page.html">Check Out</a></button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-8 col-md-4 cardboxes">
+              <div class="card cardImage" style="width: 18rem;">
+                <img src="/CardPhoto_folder/BlenderAnimation.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h4 class="card-title">Blender Animation</h4>
+                  <p class="card-text">Our Departmental Package.</p>
+                  <button class="btn btn-secondary"><a href="/department_page/preview_page.html">Check Out</a></button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-8 col-md-4 cardboxes"> 
+              <div class="card cardImage" style="width: 18rem;">
+                <img src="/CardPhoto_folder/ManStandCityView.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h4 class="card-title">Profesional Graphic Design</h4>
+                    <p class="card-text">Our Departmental Package.</p>
+                    <button class="btn btn-secondary"><a href="/department_page/preview_page.html">Check Out</a></button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-8 col-md-4 cardboxes">
+              <div class="card cardImage" style="width: 18rem;">
+                <img src="/CardPhoto_folder/Handjointogether.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h4 class="card-title">Home Elelctrical/Electronic Maintenance</h4>
+                    <p class="card-text">Our Departmental Package.</p>
+                    <button class="btn btn-secondary"><a href="/department_page/preview_page.html">Check Out</a></button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+      </section>
+
+      <section class="fouth-section">
+        <!-- our core value section -->
+        <div class="coreValue-wrapper">
+          <div class="row">
+            <div class="col-8 col-md-6 coreValue-text">
+              <div class="p-5 text-black text-content">
+                <h3>Our Core Value</h3>
+                <p>At <strong>JECHOTECH-SOLUTION</strong>, our core value are the foundation of all we do. They guild our decisions. inspire our creativity, and drive our commitment
+                  to delivering exeptional solution and Education. This principle define who we are and what we stand for as we provide unparelled IT services and learning opportunities...<span class="aboutfadetwo">........</span>
+                 </p>
+                <div class="ourMoto">
+                  <div class="font">
+                    <p class="logo">
+                      <i class="fa-solid fa-microchip"></i>
+                    </p>
+                    <p>Modern Technology We Use For You.</p>
+                  </div>
+                </div>
+                <p>At <strong>JECHOTECH-SOLUTION</strong>, our core value defines how we operate and interact with our clients, student and community. This value ensure we remain committed to our mission of delivering
+                  excellence in IT solutions, education and maintenance services. while fosting trust and long-lasting relationships. Together, let's creat , innovate and grow!</p>
+                   <button class="btn btn-secondary readMore"><a href="/about_us/aboutUs.html">Read more</a></button>
+              </div>
+            </div>
+
+            <div class="col-8 col-md-6 coreValue-image">
+              <div class="p-5 text-light">
+                <!-- background image here -->
+              </div>
+            </div>
+          </div>
+         </div>
+      </section>
+      <section class="testimonials-sections mt-5" id="testimonial">
+        <h5 class="text-center">TESTIMONIALS</h5>
+        <h2 class="text-center mb-4">What our clients say about us</h2>
+        <!-- horizontal scrollable testimonials  -->
+                      <div class="scroll-gallery" id="scrollGallery">
+                         <div class="gallery-track" id="galleryTrack">
+               <div class="gallery-item p-3">
+                <img src="/CardPhoto_folder/Mr sadat.jpg" alt="photo">
+            <h5 class="text-primary">ENG. OWOJECHO SADAT</h5>
+            <p class="positions">CEO Of CONSULTS-TEC & ENGINEERING LIMITED (C-TEL)</p>
+            <div class="galleryitems-description">
+                <p>"Amazing service! Highly recommend for their professionalism."</p>
+                </div>
+               </div>
+
+            <div class="gallery-item p-3">
+                <img src="/CardPhoto_folder/Mr francis.jpg" alt="photo">
+                <h5 class="text-primary">MR. FRANCISE</h5>
+                <p class="positions">CEO Of Nativity Drycleaning</p>
+                <div class="galleryitems-description">
+                <p>"The team exceed my expectations Will definitely return!"</p>
+                </div>
+           </div>
+
+                <div class="gallery-item p-3">
+                <img src="/Teams/1751841850563.jpg" alt="photo">
+                <h5 class="text-primary">MR. GODWIN</h5>
+                <p class="positions">CEO OF SUREKI Itd</p>
+                <div class="galleryitems-description">
+                <p>"Great experience from start to finish. Excellence Support.!"</p>
+                </div>
+           </div>
+            <div class="gallery-item p-3">
+                <img src="/CardPhoto_folder/Miss helen.jpg" alt="photo">
+                <h5 class="text-primary">MISS HELEN</h5>
+                <p class="positions">MD of KwickBuy.ng</p>
+                <div class="galleryitems-description">
+                <p>"Amazing service! Highly recommend for their professionalism."</p>
+                </div>
+           </div>
+            <div class="gallery-item p-3">
+                <img src="/Teams/team_1.jpg" alt="photo">
+                <h5 class="text-primary">MR. Oche IDUH</h5>
+                <p class="positions">CEO Of PayToPay ltd</p>
+               <div class="galleryitems-description">
+                <p>"outstanding results. I couldn't be happier with their work!"</p>
+                </div>
+           </div>
+            <div class="gallery-item p-3">
+                <img src="/Logo_Folder/danielDream.png" alt="photo">
+                <h5 class="text-primary">MR. DANIEL Ellah</h5>
+                <p class="positions">CEO of Danieldream microfinance</p>
+                <div class="galleryitems-description">
+                <p>"I'm so amaze watching my kids doing Amazing designs using advance tools all by themselve, thank to JECHOTECH-SOLUTION."</p>
+                </div>
+           </div>
+            <div class="gallery-item p-3">
+                <img src="/Teams/team_2.jpg" alt="photo">
+                <h5 class="text-primary">MALLAM ABDULRAMAN</h5>
+                <p class="positions">CEO Of JET-LIMITED</p>
+                <div class="galleryitems-description">
+                <p>"Absolutely love the experience.Everything was handle seamleslly. Will definatly use again!"</p>
+                </div>
+           </div>
+                     </div>
+                   </div> 
+      </section>
+
+      <section class="  fifth-section">
+        <div class="betterCompany-sect">
+          <h4>What's Make Our Company Better Than Others</h4>
+          <p>JECHOTECH_SOLUTION stands out with expert service, modern tech, and a commitment to quality. We don’t just work, we deliver value.</p>
+        </div>
+        <div class="row card-row">
+          <div class="col-8 col-md-4  betterCard">
+            <div class="card" style="width: 18em;">
+              <div class="logo">
+                <i class="fa-solid fa-web-awesome"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Technology Expert</h4>
+                <p class="card-text">We combine innovation with deep technical 
+                  know-how to deliver smart solutions that power your success.
+                  From software to hardware, trust us to handle your tech 
+                  needs professionally.
+                  </p>
+                   <button class="btn btn-light betterLinks"><a href="/service_page/services.html">Take Our Servics</a></button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-8 col-md-4 betterCard">
+            <div class="card" style="width: 18em;">
+              <div class="logo">
+                <i class="fa-solid fa-bomb"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Your Expectations</h4>
+                <p class="card-text">We don't just meet expectations we exceed them. With a client-first approach, we tailor every solution to match your goals, vision, and timeline.
+                   </p>
+                   <button class="btn btn-light betterLinks"><a href="/service_page/services.html">Take Our Servics</a></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8 col-md-4  betterCard">
+            <div class="card" style="width: 18em;">
+              <div class="logo">
+                <i class="fa-solid fa-flag-checkered"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Finished Projects</h4>
+                <p class="card-text">Time-bound. Quality-focused. Result-driven. We complete every project with precision, ensuring you get what you need, when you need it  and even better than expected.</p>
+                   <button class="btn btn-light betterLinks"><a href="/service_page/services.html">Take Our Servics</a></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="sixth-section">
+        <div class="container-fluid workStatistics">
+          <div class="row StatCard">
+            <div class="col-4 col-md-4 col-lg-2 p-2 statContent">
+              <div class="p-5  text-light font-logo">
+                <h2>
+                  <i class="fa-solid fa-file-zipper"></i>
+                </h2>
+                <div class="subSta">
+                  <h3>58</h3>
+                  <p>Finished Project</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 col-md-4 col-lg-2 p-2 statContent">
+              <div class="p-5  text-light font-logo">
+                <h2>
+                  <i class="fa-solid fa-people-group"></i>
+                </h2>
+                <div class="subSta">
+                  <h3>58</h3>
+                  <p>Expert Team Members</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 col-md-4 col-lg-2 p-2 statContent">
+              <div class="p-5 text-light font-logo">
+                <h2>
+                  <i class="fa-solid fa-award"></i>
+                </h2>
+                <div class="subSta">
+                  <h3>100</h3>
+                  <p>Recieved Awards</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 p-5 d-md-flex d-sm-block">
+            <div class="col-sm-12 col-md-6 d-block subFooter-one">
+            <div class="my-logo">
+              <img src="/Logo_Folder/jechotech_logo.png" alt="My logo">
+              <p>Jechotech-solution</p>
+            </div>
+            <div class="About-us">
+              <h4><a href="/about_us/aboutUs.html">About Us</a></h4>
+              <p>JECHOTECH-SOLUTION is a dynamic team of tech enthusiasts and engineers.</p>
+            </div>
+            <div class="contact-us">
+              <h4><a href="/contact_page/contact-Page.html">Contact Us</a></h4>
+              <div class="contacts">
+                <small><i class="fa-solid fa-phone-volume"></i></small>
+                <p><a href="tel:+2348100688446">Call Us</a></p>
+              </div>
+              <div class="gmail">
+                <small><i class="fa-solid fa-envelope-open-text"></i></small>
+                <p><a href="mailto:aowojechomathias@gmail.com">aowojechomathias@gmail.com</a></p>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 d-block subFooter-two">
+              <h4>Information</h4>
+              <ul>
+                <li><a href="/service_page/services.html">Services</a></li>
+                <li><a href="#">More Search</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#">Events</a></li>
+              </ul>
+            </div>
+            <!-- display on mobile-wiew but hidding on large screen -->
+
+            <div class="col-sm-12 col-md-6 d-block subFooter-three">
+              <h4>Helpful Links</h4>
+              <ul>
+                <li><a href="/service_page/services.html">Services</a></li>
+                <li><a href="/contact_page/contact-Page.html">Supports</a></li>
+                <li><a href="/terms_and_conditions/terms&condition.html">Terms & Condition</a></li>
+                <li><a href="/private_policy/Privacy-policy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <form action="https://formsubmit.co/aowojechomathias@gmail.com" method="POST">
+            <div class="col col-sm-12 col-md-6 d-block subFooter-four">
+              <h4>Subscribe More Info</h4>
+              <div class="inputWrapper d-flex">
+                <small><i class="fa-solid fa-envelope-open-text"></i></small>
+                <input type="gmail" placeholder="Enter your Email">
+              </div>
+              <button type="submit" class="btn"><a href="#">Subscribe</a></button>
+            </div>
+            </form>
+
+          </div>
+
+          </div>
+          <!-- section one -->
+          
+          
+        </div><hr>
+
+        <div class="socialMeedia-Wrapper">
+          <div class="social">
+          <a href="#"><small><i class="fab fa-whatsapp"></i></small></a>
+          <a href="#"><small><i class="fab fa-facebook-f"></i></small></a>
+          <a href="#"><small><i class="fab fa-x-twitter"></i></small></a>
+          <a href="#"><small><i class="fab fa-instagram"></i></small></a>
+          </div>
+          <div class="powerandreserve">
+          <div class="Powerby">
+            <p>Powerby: mjecho</p>
+          </div>
+          <div class="copywrite-wrapper">
+            <p>2024</p>
+            <a href="#"><small><i class="fa-regular fa-copyright"></i></small></a>
+            <p>All Right reserved</p>
+          </div>
+          </div>
+        </div>
+      </footer>
+   
+    
+   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+      <!-- customiize javascript -->
+       <script src="/cracked_cdns/cracked_min.js"></script>
+    <script src="/cracked_cdns/crackedPopper.js"></script>
+    <script src="/cracked_cdns/crackedJqueryCdn.js"></script>
+       <script src="/home_page/testjs.js"></script>
+       <script src="/department_page/preview-depart.js"></script>
+</body>
+</html>

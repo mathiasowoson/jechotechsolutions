@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(160deg, rgb(61, 61, 159),rgb(33, 33, 163),rgb(7, 7, 59));
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 3em;
+}
+.heading{
+    margin-bottom: 2em !important;
+}
+#inputText{
+    padding: 0.2em;
+    border-radius: 0.2em;
+    font-family: 600;
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid rgb(62, 60, 93);
+    margin-bottom: 2em;
+}
+.result .word{
+    display: flex;
+    justify-content: space-between;
+}
+.result button{
+    background-color: transparent;
+    color: #ae9cff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.result .details{
+    display: flex;
+    gap: 10px;
+    color: #264364;
+    font-size: 14px;
+}
+.word-meaning{
+    color: #39393b;
+}
+.word-example{
+    color: #48494e;
+    font-style: italic;
+    padding-left: 20px;
+    margin-top: 30px;
+    border-left: 5px solid #ae9cff;
+}
