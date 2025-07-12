@@ -659,6 +659,9 @@ form .actionButton-white{
   .introWrapper .introCard{
     margin-left: -2.5em !important;
   }
+  .content-wrapper{
+    background-color: #fff !important;
+  }
   
   .smallSize-display h5{
     font-size: 1.2em;
