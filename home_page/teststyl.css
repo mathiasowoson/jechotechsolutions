@@ -91,7 +91,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('/SlidingHero_Section/Robotic\ slidding.png');
+  background-image: url('/slidingHero_Section/robotic_slidding.png');
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
